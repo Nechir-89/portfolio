@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#root {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 19.2rem 1fr;
+      grid-template-columns: 1fr 19.2rem 1fr;
+}
+
+#root .heroHeader {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+#root .heroHeader h1 {
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */

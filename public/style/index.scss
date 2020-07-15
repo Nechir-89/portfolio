@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#root {
+    display: grid;
+    grid-template-columns: 1fr 19.2rem 1fr;
+    .heroHeader {
+        grid-column: 2 / 3;
+
+        h1{
+            text-align: center;
+        }
+    }
+}
