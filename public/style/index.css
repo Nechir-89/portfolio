@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.root {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 19.2rem 1fr;
+      grid-template-columns: 1fr 19.2rem 1fr;
+}
+
+section.heroHeader {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+section.heroHeader h1 {
+  text-align: center;
+}
+
+section.heroFigure {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  margin-top: 1.9rem;
+}
+
+section.heroFigure figure {
+  width: 100%;
+}
+
+section.heroFigure figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.heroDesc {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  margin-top: 1.9rem;
+}
+
+section.heroDesc p {
+  text-align: center;
+}
+
+section.CallToAction {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+section.CallToAction a {
+  text-decoration: none;
+  padding: 0.8rem 2.5rem;
+  color: #FFCD04;
+  background-color: #202020;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=index.css.map */
