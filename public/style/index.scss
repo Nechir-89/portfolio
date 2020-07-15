@@ -5,15 +5,29 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-#root {
+// root class
+.root {
     display: grid;
     grid-template-columns: 1fr 19.2rem 1fr;
 }
-
+// Hero section 1
 section.heroHeader {
     grid-column: 2 / 3;
     h1 {
         text-align: center;
+    }
+}
+
+section.heroFigure{
+    grid-column: 2 / 3;
+    margin-top: 1.9rem;
+    figure{
+        width: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }

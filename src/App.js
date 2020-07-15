@@ -5,7 +5,7 @@ import HeroFigure from "./components/heroSection/Figure"
 
 function App() {
   return (
-    <div>
+    <div className="root">
       <HeroHeading />
       <HeroFigure />
     </div>

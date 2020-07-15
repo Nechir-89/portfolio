@@ -1,10 +1,11 @@
 import React from "react";
+import Image from "./illistration.svg"
 
 function Figure() {
     return (
         <section className="heroFigure">
             <figure>
-                <img src="illistration.png" alt="Work Illistration"/>
+                <img src={Image} alt="Work Illistration"/>
             </figure>
         </section>
     )
