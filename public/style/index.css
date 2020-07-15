@@ -14,13 +14,13 @@
       grid-template-columns: 1fr 19.2rem 1fr;
 }
 
-#root .heroHeader {
+section.heroHeader {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
 }
 
-#root .heroHeader h1 {
+section.heroHeader h1 {
   text-align: center;
 }
 /*# sourceMappingURL=index.css.map */

@@ -9,11 +9,11 @@
 #root {
     display: grid;
     grid-template-columns: 1fr 19.2rem 1fr;
-    .heroHeader {
-        grid-column: 2 / 3;
+}
 
-        h1{
-            text-align: center;
-        }
+section.heroHeader {
+    grid-column: 2 / 3;
+    h1 {
+        text-align: center;
     }
 }
