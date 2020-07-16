@@ -34,7 +34,7 @@ section.heroFigure {
 section.heroDesc {
     grid-column: 2/3;
     margin-top: 1.9rem;
-    p{
+    p {
         text-align: center;
     }
 }
@@ -46,9 +46,44 @@ section.CallToAction {
     a {
         text-decoration: none;
         padding: 0.8rem 2.5rem;
-        color: #FFCD04;
+        color: #ffcd04;
         background-color: #202020;
         border-radius: 10px;
-        
     }
 }
+// End of Hero section
+
+// start of Project section
+section.projects {
+    grid-column: 1/-1;
+    margin-top: 4rem;
+    background-color: #eeeeeefa;
+    // ----------------------------
+    display: grid;
+    grid-template-columns: 1fr 19.2rem 1fr;
+
+    h3 {
+        grid-column: 2/3;
+        text-align: center;
+    }
+    div {
+        grid-column: 2/3;
+        
+        figure {
+            
+            a {
+                display: block;
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+// End of projects section
+
+// start of Tools section
+

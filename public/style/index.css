@@ -64,8 +64,43 @@ section.CallToAction {
 section.CallToAction a {
   text-decoration: none;
   padding: 0.8rem 2.5rem;
-  color: #FFCD04;
+  color: #ffcd04;
   background-color: #202020;
   border-radius: 10px;
+}
+
+section.projects {
+  grid-column: 1/-1;
+  margin-top: 4rem;
+  background-color: #eeeeeefa;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 19.2rem 1fr;
+      grid-template-columns: 1fr 19.2rem 1fr;
+}
+
+section.projects h3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  text-align: center;
+}
+
+section.projects div {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+section.projects div figure a {
+  display: block;
+  width: 100%;
+}
+
+section.projects div figure a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=index.css.map */
