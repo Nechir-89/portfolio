@@ -86,4 +86,18 @@ section.projects {
 // End of projects section
 
 // start of Tools section
+section.tool{
+    grid-column: 2/3;
+
+    h3{
+        text-align: center;
+    }
+    .toolsHeading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
 

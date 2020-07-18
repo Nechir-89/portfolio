@@ -4,7 +4,7 @@ import HeroFigure from "./components/heroSection/Figure"
 import HeroDesc from "./components/heroSection/Desc"
 import CallToAction from "./components/heroSection/CallToAction"
 import Projects from "./components/projects/Projects"
-import Tools from "./components/tools/Tools"
+import Tools from "./components/tools/Tools.js"
 
 function App() {
   return (
