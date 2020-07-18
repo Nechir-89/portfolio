@@ -68,9 +68,8 @@ section.projects {
     }
     div {
         grid-column: 2/3;
-        
+
         figure {
-            
             a {
                 display: block;
                 width: 100%;
@@ -86,18 +85,35 @@ section.projects {
 // End of projects section
 
 // start of Tools section
-section.tool{
+section.tool {
     grid-column: 2/3;
 
-    h3{
+    h3 {
         text-align: center;
     }
-    .toolsHeading{
+    .toolsHeading {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
 }
+// end of Tools section
+// start contact section
+section.contact {
+    grid-column: 1 / -1;
+    background-color: #3333335a;
+    h3 {
+        text-align: center;
+    }
+    .email{
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-
+        img{
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: .5rem;
+        }
+    }
+}

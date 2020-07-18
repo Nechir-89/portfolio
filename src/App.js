@@ -5,6 +5,7 @@ import HeroDesc from "./components/heroSection/Desc"
 import CallToAction from "./components/heroSection/CallToAction"
 import Projects from "./components/projects/Projects"
 import Tools from "./components/tools/Tools.js"
+import Contact from "./components/contact/Contact"
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
       </section>
       {/* What I use section */}
       <Tools />
+      {/* Contact Us */}
+      <Contact />
     </div>
   );
 }
