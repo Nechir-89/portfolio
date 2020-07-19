@@ -9,12 +9,14 @@ import Contact from "./components/contact/Contact"
 
 function App() {
   return (
-    <div className="root">
+    <main>
     {/* Hero section */}
       <HeroHeading />
       <HeroFigure />
       <HeroDesc />
       <CallToAction />
+      {/* Separation */}
+      <div className="separation"></div>
       {/* project section */}
       <section className="projects">
         <h3>RECENT PROJECTS</h3>
@@ -24,7 +26,7 @@ function App() {
       <Tools />
       {/* Contact Us */}
       <Contact />
-    </div>
+    </main>
   );
 }
 

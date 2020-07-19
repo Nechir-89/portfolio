@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 // root class
-.root {
+main {
     display: grid;
     grid-template-columns: 1fr 19.2rem 1fr;
 }
@@ -53,10 +53,20 @@ section.CallToAction {
 }
 // End of Hero section
 
+// separation
+div.separation {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+    // border-top: 1rem solid transparent;
+    border-left: 20rem solid transparent;
+    border-bottom: 1rem solid #eeeeeefa;
+}
+
 // start of Project section
 section.projects {
     grid-column: 1/-1;
-    margin-top: 4rem;
+    margin-top: 0rem;
+    padding-bottom: 1rem;
     background-color: #eeeeeefa;
     // ----------------------------
     display: grid;
@@ -65,6 +75,8 @@ section.projects {
     h3 {
         grid-column: 2/3;
         text-align: center;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
     div {
         grid-column: 2/3;
@@ -73,10 +85,17 @@ section.projects {
             a {
                 display: block;
                 width: 100%;
+                margin-bottom: 0.5rem;
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                }
+            }
+            figcaption {
+                margin-bottom: 1rem;
+                h4 {
+                    margin-bottom: 0.5rem;
                 }
             }
         }
@@ -87,14 +106,19 @@ section.projects {
 // start of Tools section
 section.tool {
     grid-column: 2/3;
-
+    padding-top: 2rem;
     h3 {
         text-align: center;
+        margin-bottom: 1.2rem;
     }
     .toolsHeading {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 0.5rem;
+    }
+    p {
+        margin-bottom: 1.3rem;
     }
 }
 // end of Tools section
@@ -102,18 +126,46 @@ section.tool {
 section.contact {
     grid-column: 1 / -1;
     background-color: #3333335a;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     h3 {
         text-align: center;
+        margin-bottom: 1rem;
     }
-    .email{
+    .email {
         display: flex;
         justify-content: center;
         align-items: center;
-
-        img{
+        margin-bottom: 1.3rem;
+        img {
             width: 1.5rem;
             height: 1.5rem;
-            margin-right: .5rem;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .contactLinks {
+        display: grid;
+        grid-template-columns: 1fr 19.2rem 1fr;
+        .container {
+            grid-column: 2/3;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-row-gap: 1rem;
+            .contactLink {
+                justify-self: center;
+                align-self: center;
+                a {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    img {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        object-fit: cover;
+                    }
+                }
+            }
         }
     }
 }
