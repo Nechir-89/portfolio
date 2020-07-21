@@ -12,7 +12,7 @@ function Project(props) {
             <figcaption>
                 <h4>{props.id}- {props.projectTitle}</h4>
                 <p>{props.desc}</p>
-                <span><a href={props.url}>Read more...</a></span>
+                <span>Click <a href={props.url}>here</a> to find it out.</span>
             </figcaption>
         </figure>
     )

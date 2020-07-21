@@ -16,7 +16,7 @@ import ContactLink from "./children/ContactLink"
 
 export default function Contact() {
     return (
-        <section className="contact">
+        <section className="contact" id="contact">
             <h3>CONTACT ME</h3>
             <Email
                 email="nechir.c2019@gmail.com"

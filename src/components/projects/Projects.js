@@ -14,12 +14,12 @@ function Projects() {
                 url="https://www.brha-duhok.org/"
                 id="1"
                 desc="
-                        Hi, My name is Nechir, I design and 
-                        develope web apps beautifly and 
-                        clearly. You can reach me out buy 
-                        social  networks provided in the 
-                        foooter section or just click on 
-                        contact me.
+                        This project built with WordPress as it has been asked by the agency.
+                        the project has many pages, on each page, there are several sections. 
+                        All of them were designed and developed from scratch using a WordPress 
+                        Elementor plugin.
+                        the website designed to be a good fit for the desktop screens only, 
+                        and yeah definitely for some reason.
                     "
             />
 
@@ -30,12 +30,9 @@ function Projects() {
                 url="/"
                 id="2"
                 desc="
-                        Hi, My name is Nechir, I design and 
-                        develope web apps beautifly and 
-                        clearly. You can reach me out buy 
-                        social  networks provided in the 
-                        foooter section or just click on 
-                        contact me.
+                        This project is basically build for computer science department (CS) 
+                        to show class time on TV screens. I designed and developed the whole project.
+                        For development I used HTML, CSS (SCSS), JQuery, Ajax, JSON, PHP, and MySQL database.
                     "
             />
         </div>

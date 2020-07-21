@@ -97,6 +97,10 @@ section.projects {
                 h4 {
                     margin-bottom: 0.5rem;
                 }
+                a{
+                    display: inline;
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -166,6 +170,32 @@ section.contact {
                     }
                 }
             }
+        }
+    }
+}
+// End of contact section
+// start footer section
+footer {
+    grid-column: 1 / -1;
+    background-color: #333333ee;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    div.container {
+        display: grid;
+        grid-template-columns: 1fr 9.6rem 9.6rem 1fr;
+        grid-template-rows: auto auto auto 2rem;
+        grid-row-gap: 0.5rem;
+
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        div.publishDate{
+            color: whitesmoke;
+            grid-row: 4;
+            grid-column: 2 / 4;
+            justify-self: center;
+            align-self: flex-end;
         }
     }
 }

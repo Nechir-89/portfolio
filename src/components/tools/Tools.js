@@ -7,7 +7,7 @@ import developIcon from "./code-24px.svg"
 
 export default function Tools() {
     return (
-        <section className="tool">
+        <section className="tool" id="tools">
             <h3>WHAT I USE</h3>
             <Heading
                 imageSrc={designIcon}
@@ -15,12 +15,8 @@ export default function Tools() {
                 imageAlt="icon"
             />
             <p>
-                I usually like to design things from scrach,
-                and UX is the first approach take action in
-                designing web apps. I use pen and paper to
-                build mockups and  wireframes. then UI
-                approach is taking second level of work along
-                side digital wireframe.
+                I take UX/UI principles to draw wireframes by pen and paper and 
+                transform it to digital wireframe and mockup using Adobe XD
             </p>
             <Heading
                 imageSrc={developIcon}
@@ -28,15 +24,10 @@ export default function Tools() {
                 imageAlt="icon"
             />
             <p>
-                For coding and development I often times use the mix
-                of the following markup and programming languages,
-                platforms, and libraries with taking care of responsive
-                design..
-            </p>
-            <p>
-                HyperText Markup Language (HTML), Cascading Style Sheet
-                (CSS), Java Script (JS), CSS Bootstap, SASS (SCSS),
-                React JS, JQuery, AJAX
+                I use HTML, CSS, and JS to build up websites and web apps 
+                with the help of libraries, frameworks, and tools like SCSS, 
+                Bootstrap CSS, JQuery, AJAX, JSON, React JS, WordPress, and
+                Git for version control.
             </p>
         </section>
     )

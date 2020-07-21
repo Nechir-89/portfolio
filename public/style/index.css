@@ -123,6 +123,11 @@ section.projects div figure figcaption h4 {
   margin-bottom: 0.5rem;
 }
 
+section.projects div figure figcaption a {
+  display: inline;
+  text-decoration: none;
+}
+
 section.tool {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -219,5 +224,40 @@ section.contact .contactLinks .container .contactLink a img {
   height: 1.5rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+footer {
+  grid-column: 1 / -1;
+  background-color: #333333ee;
+  padding-top: 1.5rem;
+  padding-bottom: .5rem;
+}
+
+footer div.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 9.6rem 9.6rem 1fr;
+      grid-template-columns: 1fr 9.6rem 9.6rem 1fr;
+  -ms-grid-rows: auto auto auto 2rem;
+      grid-template-rows: auto auto auto 2rem;
+  grid-row-gap: 0.5rem;
+}
+
+footer div.container a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+footer div.container div.publishDate {
+  color: whitesmoke;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 /*# sourceMappingURL=index.css.map */

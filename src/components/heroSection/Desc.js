@@ -4,11 +4,9 @@ function Desc() {
     return (
         <section className="heroDesc">
             <p>
-                Hi, My name is Nechir, <strong>I design and
-                develope web apps beautifly and
-                clearly.</strong> You can reach me out buy social
-                networks provided in the foooter
-                section or just click on contact me.
+                Hi, I am Nechir /nɪtʃi:r/<br />
+                I design and develop beautiful, fast, and easy to use websites and 
+                web apps.
            </p>
         </section>
     )

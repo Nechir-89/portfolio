@@ -3,7 +3,7 @@ import React from "react";
 function CallToAction() {
     return (
         <section className="CallToAction">
-            <a href="/">Contact Me</a>
+            <a href="#contact">Contact Me</a>
         </section>
     )
 }
