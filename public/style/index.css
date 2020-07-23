@@ -7,7 +7,7 @@
           box-sizing: border-box;
 }
 
-main {
+main.portfolioMain {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 19.2rem 1fr;
@@ -230,7 +230,7 @@ footer {
   grid-column: 1 / -1;
   background-color: #333333ee;
   padding-top: 1.5rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 footer div.container {
@@ -259,5 +259,21 @@ footer div.container div.publishDate {
       justify-self: center;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+div.about main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
+  padding-bottom: 2rem;
+}
+
+div.about main p.about-desc {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  line-height: 1.5;
+  word-spacing: .4rem;
 }
 /*# sourceMappingURL=index.css.map */

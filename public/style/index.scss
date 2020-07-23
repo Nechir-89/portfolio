@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 // root class
-main {
+main.portfolioMain {
     display: grid;
     grid-template-columns: 1fr 19.2rem 1fr;
 }
@@ -97,7 +97,7 @@ section.projects {
                 h4 {
                     margin-bottom: 0.5rem;
                 }
-                a{
+                a {
                     display: inline;
                     text-decoration: none;
                 }
@@ -126,7 +126,7 @@ section.tool {
     }
 }
 // end of Tools section
-// start contact section
+// start contact section (Contact Component)
 section.contact {
     grid-column: 1 / -1;
     background-color: #3333335a;
@@ -179,7 +179,7 @@ footer {
     grid-column: 1 / -1;
     background-color: #333333ee;
     padding-top: 1.5rem;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     div.container {
         display: grid;
         grid-template-columns: 1fr 9.6rem 9.6rem 1fr;
@@ -190,12 +190,28 @@ footer {
             color: whitesmoke;
             text-decoration: none;
         }
-        div.publishDate{
+        div.publishDate {
             color: whitesmoke;
             grid-row: 4;
             grid-column: 2 / 4;
             justify-self: center;
             align-self: flex-end;
+        }
+    }
+}
+
+div.about {
+    main{
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+
+        padding-bottom: 2rem;
+
+        p.about-desc{
+            grid-column: 2/3;
+            line-height: 1.5;
+            word-spacing: .4rem;
+            // letter-spacing: 1px;
         }
     }
 }
