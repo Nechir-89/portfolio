@@ -269,11 +269,88 @@ div.about main {
   padding-bottom: 2rem;
 }
 
+div.about main div.cover {
+  grid-column: 1 / -1;
+  height: 13rem;
+  background-image: url("cover.svg");
+  background-size: cover;
+  margin-bottom: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
+}
+
+div.about main div.cover figure {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  margin-top: 1rem;
+}
+
+div.about main div.cover figure img {
+  width: 8rem;
+  height: 8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+div.about main div.cover figure figcaption h3 {
+  color: #222222;
+}
+
+div.about main div.cover figure figcaption p {
+  color: #555555;
+}
+
 div.about main p.about-desc {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   line-height: 1.5;
-  word-spacing: .4rem;
+  word-spacing: 0.4rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+}
+
+header div.logo a {
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style-type: none;
+  position: absolute;
+  background-color: #141414;
+  border-radius: 50%;
+  padding: 2rem 2rem 2rem 2rem;
+  -webkit-transform: translate(100%, -100%);
+          transform: translate(100%, -100%);
+  top: 0px;
+  right: 0px;
+}
+
+header nav ul li {
+  color: white;
+  padding: 0.35rem 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul.active {
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
 }
 /*# sourceMappingURL=index.css.map */

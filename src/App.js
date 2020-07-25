@@ -9,15 +9,29 @@ import { BrowserRouter, Link, Route } from 'react-router-dom'
 export default function App() {
   return (
     <BrowserRouter>
-      <nav>
-        <ul>
-          <li><Link to="/">Portfolio</Link></li>
-          <li><Link to="/About">About</Link></li>
-        </ul>
-      </nav>
+      <header>
+        {/* logo */}
+        <div className="logo">
+          <a href="/">
+            dev. <strong>NECHIR</strong>
+          </a>
+        </div>
+        {/* menu */}
+        <nav>
+          <div>
+            <img src="" alt="menu" />
+          </div>
+          <ul className="active">
+            <li><Link to="/">Portfolio</Link></li>
+            <li><Link to="/About">About</Link></li>
+          </ul>
+        </nav>
+
+      </header>
+
       <div>
         <Route exact path="/" component={Portfolio} />
-        <Route exact path="/About" component={About} />
+        <Route path="/About" component={About} />
       </div>
     </BrowserRouter>
 
