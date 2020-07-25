@@ -5,6 +5,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+#root{
+    overflow: hidden;
+}
 // root class
 main.portfolioMain {
     display: grid;
@@ -252,38 +255,40 @@ header {
     justify-content: space-between;
     padding: 1rem;
     position: relative;
-    div.logo{
-        a{
-            text-decoration: none;
-        }
-    }
+    // overflow-x: hidden;
+    // overflow-y: visible;
+    // over
+    // div.logo{
+        
+    // }
+
     nav {
+        cursor: pointer;
         
         ul{
             list-style-type: none;
             position: absolute;
-            background-color: rgb(20,20,20);
+            background-color: #6b63fff8;
             border-radius: 50%;
-            padding: 2rem 2rem 2rem 2rem;
-            transform: translate(100%, -100%);
-
+            padding: 15rem 15rem 5rem 5rem;
             top: 0px;
-            right: 0px;
-
+            right: 0rem;
+            transform: translate(100%, -100%);
+            transition: transform ease-out 300ms;
             
-
             li{
-                color: white;
+                color: whitesmoke;
                 padding: 0.35rem 0;
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: whitesmoke;
                 }
             }
         }
-
         ul.active{
-            transform: translate(0%, -50%);
+            // display: block;
+            transform: translate(50%, -50%);
+            transition: transform ease-in 300ms;
         }
     }
 }

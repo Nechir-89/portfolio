@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+#root {
+  overflow: hidden;
+}
+
 main.portfolioMain {
   display: -ms-grid;
   display: grid;
@@ -323,34 +327,42 @@ header {
   position: relative;
 }
 
-header div.logo a {
-  text-decoration: none;
+header nav {
+  cursor: pointer;
 }
 
 header nav ul {
   list-style-type: none;
   position: absolute;
-  background-color: #141414;
+  background-color: #6b63fff8;
   border-radius: 50%;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 15rem 15rem 5rem 5rem;
+  top: 0px;
+  right: 0rem;
   -webkit-transform: translate(100%, -100%);
           transform: translate(100%, -100%);
-  top: 0px;
-  right: 0px;
+  -webkit-transition: -webkit-transform ease-out 300ms;
+  transition: -webkit-transform ease-out 300ms;
+  transition: transform ease-out 300ms;
+  transition: transform ease-out 300ms, -webkit-transform ease-out 300ms;
 }
 
 header nav ul li {
-  color: white;
+  color: whitesmoke;
   padding: 0.35rem 0;
 }
 
 header nav ul li a {
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
 }
 
 header nav ul.active {
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  -webkit-transition: -webkit-transform ease-in 300ms;
+  transition: -webkit-transform ease-in 300ms;
+  transition: transform ease-in 300ms;
+  transition: transform ease-in 300ms, -webkit-transform ease-in 300ms;
 }
 /*# sourceMappingURL=index.css.map */
