@@ -27,7 +27,7 @@ function Projects() {
                 projectTitle="Class Time Schedule"
                 imageSrc={ImageProject2}
                 imageAlt="Class Time Schedule"
-                url="/ClassTimeScheduleProject"
+                url="/ClassTimeProject"
                 id="2"
                 desc="
                         This project is basically build for computer science department (CS) 

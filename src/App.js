@@ -11,7 +11,7 @@ import crossImage from './cross.svg'
 import logo from './logo.jpg'
 
 // import ClassTimeScheduleProject
-import ClassTimeScheduleProject from "./components/ClassTimeScheduleProject"
+import ClassTimeProject from "./components/ClassTimeScheduleProject"
 
 export default class App extends React.Component {
   constructor(){
@@ -51,15 +51,13 @@ export default class App extends React.Component {
                 </li>
               <li><Link to="/">Portfolio</Link></li>
               <li><Link to="/About">About</Link></li>
-              <li><Link to="/ClassTimeScheduleProject">ClassTimeScheduleProject</Link></li>
             </ul>
           </nav>
         </header>
-
         <div>
           <Route exact path="/" component={Portfolio} />
           <Route path="/About" component={About} />
-          <Route path="/ClassTimeScheduleProjects" component={ClassTimeScheduleProject} />
+          <Route path="/ClassTimeProject" component={ClassTimeProject} />
         </div>
       </BrowserRouter>
 
