@@ -9,27 +9,33 @@ import Tools from "./tools/Tools.js"
 import Contact from "./contact/Contact"
 import Footer from "./Footer/Footer"
 
-export default function Portfolio(){
-    return (
-        <main className="portfolioMain">
-        {/* Hero section */}
-          <HeroHeading />
-          <HeroFigure />
-          <HeroDesc />
-          <CallToAction />
-          {/* Separation */}
-          <div className="separation"></div>
-          {/* project section */}
-          <section className="projects" id="projects">
-            <h3>RECENT PROJECTS</h3>
-            <Projects />        
-          </section>
-          {/* What I use section */}
-          <Tools />
-          {/* Contact Us */}
-          <Contact />
-          {/* Footer */}
-          <Footer />
-        </main>
-      );
+export default function Portfolio() {
+  return (
+    <main className="portfolioMain">
+      {/* Hero section */}
+      <HeroHeading />
+      <HeroFigure />
+      <HeroDesc />
+      <CallToAction />
+      {/* Separation */}
+      <div className="separation">
+        <div class="custom-shape-divider-top-1595766065">
+          <svg data-name="Layer 1" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+          </svg>
+        </div>
+      </div>
+      {/* project section */}
+      <section className="projects" id="projects">
+        <h3>RECENT PROJECTS</h3>
+        <Projects />
+      </section>
+      {/* What I use section */}
+      <Tools />
+      {/* Contact Us */}
+      <Contact />
+      {/* Footer */}
+      <Footer />
+    </main>
+  );
 }

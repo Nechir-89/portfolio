@@ -8,7 +8,7 @@ import { BrowserRouter, Link, Route } from 'react-router-dom'
 // images
 import MenuImg from './menu.svg'
 import crossImage from './cross.svg'
-import logo from './logo anem.svg'
+import logo from './logo.jpg'
 
 
 export default class App extends React.Component {
