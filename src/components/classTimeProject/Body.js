@@ -37,7 +37,7 @@ export default function Body() {
             />
             <Card
                 imageURL={image4}
-                desc="On top, right hand corner there is notification, whenever user change 
+                desc="On top right hand corner there is notification, whenever user change 
                 something and click on save button there will be notification for him which
                 shows the state of change (pass or fail) "
             />

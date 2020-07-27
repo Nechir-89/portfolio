@@ -7,7 +7,7 @@ export default function Heading(props) {
                 src={props.imageSrc}
                 alt={props.imageAlt}
             />
-            <h4>{props.text}</h4>
+            <h3 style={{color: props.color}}>{props.text}</h3>
         </div>
     )
 }

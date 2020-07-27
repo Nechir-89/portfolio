@@ -26,6 +26,11 @@ section.heroHeader {
 
 section.heroHeader h1 {
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 1.3;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 section.heroFigure {
@@ -56,6 +61,10 @@ section.heroDesc {
 
 section.heroDesc p {
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  word-spacing: 2px;
+  color: #4b4b4b;
 }
 
 section.CallToAction {
@@ -76,12 +85,30 @@ section.CallToAction {
 
 section.CallToAction a {
   text-decoration: none;
-  word-spacing: nowrap;
+  word-spacing: 4px;
   width: 10rem;
   padding: 0.8rem 0rem;
   color: #ffcd04;
   background-color: #202020;
   border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: -webkit-transform ease-out 200ms;
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+section.CallToAction a:hover {
+  -webkit-box-shadow: 0px -2px 0px #ffcd04, 0px 2px 0px #ffcd04, 2px 0px 0px #ffcd04, -2px 0px 0px #ffcd04;
+          box-shadow: 0px -2px 0px #ffcd04, 0px 2px 0px #ffcd04, 2px 0px 0px #ffcd04, -2px 0px 0px #ffcd04;
+  -webkit-transform: scaleX(1.05);
+          transform: scaleX(1.05);
+  -webkit-transition: -webkit-transform ease-in 200ms, -webkit-box-shadow ease-in 200ms;
+  transition: -webkit-transform ease-in 200ms, -webkit-box-shadow ease-in 200ms;
+  transition: transform ease-in 200ms, box-shadow ease-in 200ms;
+  transition: transform ease-in 200ms, box-shadow ease-in 200ms, -webkit-transform ease-in 200ms, -webkit-box-shadow ease-in 200ms;
 }
 
 div.separation {
@@ -123,13 +150,15 @@ section.projects {
       grid-template-columns: 1fr 19.2rem 1fr;
 }
 
-section.projects h3 {
+section.projects h2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   text-align: center;
   padding-top: 4rem;
   padding-bottom: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  word-spacing: 2px;
 }
 
 section.projects div {
@@ -142,6 +171,10 @@ section.projects div figure a {
   display: block;
   width: 100%;
   margin-bottom: 0.5rem;
+  padding: 0.25rem;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
 section.projects div figure a img {
@@ -152,16 +185,37 @@ section.projects div figure a img {
 }
 
 section.projects div figure figcaption {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 section.projects div figure figcaption h4 {
   margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
 }
 
-section.projects div figure figcaption a {
+section.projects div figure figcaption p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  word-spacing: 2px;
+  color: #4b4b4b;
+  text-align: justify;
+}
+
+section.projects div figure figcaption span {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+}
+
+section.projects div figure figcaption span a {
   display: inline;
   text-decoration: none;
+  padding: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
 }
 
 section.tool {
@@ -171,12 +225,15 @@ section.tool {
   padding-top: 2rem;
 }
 
-section.tool h3 {
+section.tool h2 {
   text-align: center;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  word-spacing: 2px;
+  color: rgba(0, 0, 0, 0.9);
 }
 
-section.tool .toolsHeading {
+section.tool div.toolsHeading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,11 +243,21 @@ section.tool .toolsHeading {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+section.tool div.toolsHeading h3 {
+  font-family: "Roboto", sans-serif;
+  margin-left: 0.5rem;
 }
 
 section.tool p {
-  margin-bottom: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 section.contact {
@@ -200,9 +267,12 @@ section.contact {
   padding-bottom: 1.5rem;
 }
 
-section.contact h3 {
+section.contact h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  word-spacing: 2px;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 section.contact .email {
@@ -216,6 +286,7 @@ section.contact .email {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1.3rem;
+  font-family: "Roboto", sans-serif;
 }
 
 section.contact .email img {
@@ -282,6 +353,9 @@ footer div.container {
 footer div.container a {
   color: whitesmoke;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  word-spacing: 2px;
+  font-size: smaller;
 }
 
 footer div.container div.publishDate {
@@ -295,6 +369,9 @@ footer div.container div.publishDate {
       justify-self: center;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  font-family: "Roboto", sans-serif;
+  font-size: smaller;
+  word-spacing: 2px;
 }
 
 div.about main {
@@ -308,13 +385,25 @@ div.about main {
 div.about main div.cover {
   grid-column: 1 / -1;
   height: 13rem;
-  background-image: url("cover.svg");
-  background-size: cover;
   margin-bottom: 1.5rem;
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 10% 80% 10%;
       grid-template-columns: 10% 80% 10%;
+}
+
+div.about main div.cover::before {
+  content: "";
+  background: url(cover.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 div.about main div.cover figure {
@@ -330,22 +419,51 @@ div.about main div.cover figure img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  border: 1px solid #947a12;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  transform: rotate(0deg);
+  -webkit-transition: -webkit-transform ease-out 200ms, -webkit-box-shadow ease-out 200ms;
+  transition: -webkit-transform ease-out 200ms, -webkit-box-shadow ease-out 200ms;
+  transition: transform ease-out 200ms, box-shadow ease-out 200ms;
+  transition: transform ease-out 200ms, box-shadow ease-out 200ms, -webkit-transform ease-out 200ms, -webkit-box-shadow ease-out 200ms;
+}
+
+div.about main div.cover figure img:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  -webkit-transition: -webkit-transform ease-in 200ms, -webkit-box-shadow ease-in 200ms;
+  transition: -webkit-transform ease-in 200ms, -webkit-box-shadow ease-in 200ms;
+  transition: transform ease-in 200ms, box-shadow ease-in 200ms;
+  transition: transform ease-in 200ms, box-shadow ease-in 200ms, -webkit-transform ease-in 200ms, -webkit-box-shadow ease-in 200ms;
 }
 
 div.about main div.cover figure figcaption h3 {
   color: #222222;
+  font-family: "Roboto", sans-serif;
+  word-spacing: 2px;
 }
 
 div.about main div.cover figure figcaption p {
-  color: #555555;
+  color: #444444;
+  font-family: "Roboto", sans-serif;
+  word-spacing: 2px;
 }
 
 div.about main p.about-desc {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  line-height: 1.5;
-  word-spacing: 0.4rem;
+  line-height: 1.6;
+  word-spacing: 4px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
 }
 
 header {
@@ -397,6 +515,8 @@ header nav ul {
 header nav ul li {
   color: whitesmoke;
   padding: 0.35rem 0;
+  font-family: "Roboto", sans-serif;
+  word-spacing: 2px;
 }
 
 header nav ul li a {
@@ -437,10 +557,24 @@ div.classTimeProject main section.projectHeader figure img {
   width: 100%;
   -o-object-fit: fill;
      object-fit: fill;
+  padding: 0.25rem;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
 div.classTimeProject main section.projectHeader figure figcaption h3 {
   padding: 1rem 0 0.5rem;
+  font-family: "Roboto", sans-serif;
+  word-spacing: 2px;
+}
+
+div.classTimeProject main section.projectHeader figure figcaption p {
+  font-family: "Roboto", sans-serif;
+  word-spacing: 2px;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 div.classTimeProject main section.projectBody {
@@ -453,10 +587,13 @@ div.classTimeProject main section.projectBody h3 {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  word-spacing: 2px;
 }
 
 div.classTimeProject main section.projectBody div.card {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
 }
 
 div.classTimeProject main section.projectBody div.card figure {
@@ -469,5 +606,33 @@ div.classTimeProject main section.projectBody div.card figure img {
   height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
+  padding: 0.25rem;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+div.classTimeProject main section.projectBody div.card figure figcaption p {
+  font-family: "Roboto", sans-serif;
+  word-spacing: 2px;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 1.5;
+}
+
+div.classTimeProject main section.projectBody div.card::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: rgba(148, 122, 18, 0.5);
+  border: 1px solid;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -0.4rem;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=index.css.map */

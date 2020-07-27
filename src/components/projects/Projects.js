@@ -31,8 +31,7 @@ function Projects() {
                 id="2"
                 desc="
                         This project is basically build for computer science department (CS) 
-                        to show class time on TV screens. I designed and developed the whole project.
-                        For development I used HTML, CSS (SCSS), JQuery, Ajax, JSON, PHP, and MySQL database.
+                        to show class time on TV screens. The project is built in May 2019. 
                     "
             />
         </div>

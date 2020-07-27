@@ -27,7 +27,7 @@ export default function Portfolio() {
       </div>
       {/* project section */}
       <section className="projects" id="projects">
-        <h3>RECENT PROJECTS</h3>
+        <h2>Recent Projects</h2>
         <Projects />
       </section>
       {/* What I use section */}
