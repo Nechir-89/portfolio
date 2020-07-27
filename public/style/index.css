@@ -439,10 +439,24 @@ div.classTimeProject main section.projectHeader figure img {
      object-fit: fill;
 }
 
+div.classTimeProject main section.projectHeader figure figcaption h3 {
+  padding: 1rem 0 0.5rem;
+}
+
 div.classTimeProject main section.projectBody {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+}
+
+div.classTimeProject main section.projectBody h3 {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+div.classTimeProject main section.projectBody div.card {
+  margin-bottom: 1.5rem;
 }
 
 div.classTimeProject main section.projectBody div.card figure {

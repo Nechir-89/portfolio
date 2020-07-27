@@ -344,20 +344,31 @@ div.classTimeProject {
                     width: 100%;
                     object-fit: fill;
                 }
+                figcaption{
+                    h3{
+                        padding: 1rem 0 0.5rem;
+                    }
+                }
             }
         }
 
         section.projectBody {
             grid-column: 2/3;
 
+            h3{
+                margin-top: 1rem;
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
             div.card {
+                margin-bottom: 1.5rem;
                 figure {
                     width: 100%;
                     height: 100%;
-                    img{
+                    img {
                         width: 100%;
-                    height: 100%;
-                    object-fit: fill;
+                        height: 100%;
+                        object-fit: fill;
                     }
                 }
             }
