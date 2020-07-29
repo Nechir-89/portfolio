@@ -1,0 +1,78 @@
+div.about {
+    main {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+
+        padding-bottom: 2rem;
+        div.cover {
+            grid-column: 1 / -1;
+            height: 13rem;
+            // background-image: url("cover.svg");
+            // background-size: cover;
+            margin-bottom: 1.5rem;
+            position: relative;
+            
+            &::before {
+                content: "";
+                background: url(cover.jpg);
+                background-size: cover;
+                opacity: 0.5;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                position: absolute;
+                z-index: -1;
+            }
+
+            display: grid;
+            grid-template-columns: 10% 80% 10%;
+
+            figure {
+                grid-column: 2/3;
+                margin-top: 1rem;
+                // border: 1px solid;
+                // transform: rotate(45deg);
+                img {
+                    width: 8rem;
+                    height: 8rem;
+                    object-fit: cover;
+                    border-radius: 5px;
+                    transform: rotate(0deg);
+                    padding: 0.3rem;
+                    margin-bottom: 1rem;
+                    border: 1px solid #947a12;
+                    box-shadow: none;
+                    transform: rotate(0deg);
+                    transition: transform ease-out 200ms, box-shadow ease-out 200ms;
+
+                    &:hover {
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                        transform: rotate(15deg);
+                        transition: transform ease-in 200ms, box-shadow ease-in 200ms;
+                    }
+                }
+
+                figcaption {
+                    h3 {
+                        color: #222222;
+                        font-family: $nativeFont;
+                        word-spacing: 2px;
+                    }
+                    p {
+                        color: #444444;
+                        font-family: $nativeFont;
+                        word-spacing: 2px;
+                    }
+                }
+            }
+        }
+        p.about-desc {
+            grid-column: 2/3;
+            line-height: 1.6;
+            word-spacing: 4px;
+            font-family: $nativeFont;
+            letter-spacing: 0.5px;
+        }
+    }
+}

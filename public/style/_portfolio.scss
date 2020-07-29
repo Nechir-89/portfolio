@@ -1,0 +1,199 @@
+@import './functions';
+
+main.portfolioMain {
+    display: grid;
+    grid-template-columns: 1fr 19.2rem 1fr;
+}
+// Hero section 1
+section.heroHeader {
+    grid-column: 2 / 3;
+    h1 {
+        text-align: center;
+        font-family: $nativeFont;
+        font-weight: 500;
+        font-size: 1.7rem;
+        line-height: 1.3;
+        color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+section.heroFigure {
+    grid-column: 2 / 3;
+    margin-top: 1.9rem;
+    figure {
+        width: 100%;
+        img {
+            @include responsiveImage();
+        }
+    }
+}
+
+section.heroDesc {
+    grid-column: 2/3;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    p {
+        text-align: center;
+        font-family: $nativeFont;
+        line-height: 1.5;
+        word-spacing: 2px;
+        color: rgba(75, 75, 75, 1);
+    }
+}
+
+section.CallToAction {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    a {
+        text-decoration: none;
+        word-spacing: 4px;
+        width: 10rem;
+        padding: 0.8rem 0rem;
+        color: #ffcd04;
+        background-color: #202020;
+        border-radius: 10px;
+        font-family: $nativeFont;
+        transform: scaleX(1);
+        transition: transform ease-out 200ms;
+        // box-shadow: 0px 0px 15px (20, 20, 20, 1);
+        &:hover {
+            box-shadow: 0px -2px 0px rgba(255, 205, 4, 1), 0px 2px 0px rgba(255, 205, 4, 1),
+                2px 0px 0px rgba(255, 205, 4, 1), -2px 0px 0px rgba(255, 205, 4, 1);
+
+            // border: 1px solid rgba(255, 205, 4, 1);
+            transform: scaleX(1.05);
+            transition: transform ease-in 200ms, box-shadow ease-in 200ms;
+        }
+    }
+}
+// End of Hero section
+
+// separation
+div.separation {
+    grid-column: 2 / 3;
+    margin-top: 2rem;
+    // // border-top: 1rem solid transparent;
+    // border-left: 20rem solid transparent;
+    // border-bottom: 1rem solid #eeeeeefa;
+    // height: 5rem;
+    position: relative;
+    .custom-shape-divider-top-1595766065 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .custom-shape-divider-top-1595766065 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 79px;
+    }
+
+    .custom-shape-divider-top-1595766065 .shape-fill {
+        fill: white;
+    }
+}
+
+// start of Project section
+section.projects {
+    grid-column: 1/-1;
+    margin-top: 0rem;
+    padding-bottom: 1rem;
+    background-color: #eeeeeefa;
+    // ----------------------------
+    display: grid;
+    grid-template-columns: 1fr 19.2rem 1fr;
+    h2 {
+        grid-column: 2/3;
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 1.5rem;
+        font-family: $nativeFont;
+        word-spacing: 2px;
+    }
+    div {
+        grid-column: 2/3;
+
+        figure {
+            a {
+                display: block;
+                width: 100%;
+                margin-bottom: 0.5rem;
+                padding: 0.25rem;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+                border-radius: 5px;
+                img {
+                    @include responsiveImage();
+                }
+            }
+            figcaption {
+                margin-bottom: 2rem;
+                h4 {
+                    margin-bottom: 0.5rem;
+                    font-family: $nativeFont;
+                }
+                p {
+                    font-family: $nativeFont;
+                    font-size: 0.9rem;
+                    line-height: 1.5;
+                    word-spacing: 2px;
+                    color: rgba(75, 75, 75, 1);
+                    text-align: justify;
+                }
+                span {
+                    font-family: $nativeFont;
+                    font-size: 0.9rem;
+                    a {
+                        display: inline;
+                        text-decoration: none;
+                        padding: 0px;
+                        box-shadow: none;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+// End of projects section
+
+// start of Tools section
+section.tool {
+    grid-column: 2/3;
+    padding-top: 2rem;
+    h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-family: $nativeFont;
+        word-spacing: 2px;
+        color: rgba(0, 0, 0, 0.9);
+    }
+    div.toolsHeading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.7rem;
+        h3 {
+            font-family: $nativeFont;
+            margin-left: 0.5rem;
+        }
+    }
+    p {
+        font-family: $nativeFont;
+        line-height: 1.5;
+        word-spacing: 2px;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: rgba(0, 0, 0, 0.9);
+    }
+}
+// end of Tools section

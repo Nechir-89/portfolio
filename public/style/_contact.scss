@@ -1,0 +1,50 @@
+section.contact {
+    grid-column: 1 / -1;
+    background-color: #3333335a;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-family: $nativeFont;
+        word-spacing: 2px;
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .email {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.3rem;
+        font-family: $nativeFont;
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .contactLinks {
+        display: grid;
+        grid-template-columns: 1fr 19.2rem 1fr;
+        .container {
+            grid-column: 2/3;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-row-gap: 1rem;
+            .contactLink {
+                justify-self: center;
+                align-self: center;
+                a {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    img {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

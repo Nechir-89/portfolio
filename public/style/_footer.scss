@@ -1,0 +1,29 @@
+footer {
+    grid-column: 1 / -1;
+    background-color: #333333ee;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    div.container {
+        display: grid;
+        grid-template-columns: 1fr 9.6rem 9.6rem 1fr;
+        grid-template-rows: auto auto auto 2rem;
+        grid-row-gap: 0.5rem;
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+            font-family: $nativeFont;
+            word-spacing: 2px;
+            font-size: smaller;
+        }
+        div.publishDate {
+            color: whitesmoke;
+            grid-row: 4;
+            grid-column: 2 / 4;
+            justify-self: center;
+            align-self: flex-end;
+            font-family: $nativeFont;
+            font-size: smaller;
+            word-spacing: 2px;
+        }
+    }
+}
