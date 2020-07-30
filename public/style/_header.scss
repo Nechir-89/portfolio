@@ -14,9 +14,7 @@ header {
         height: 2rem;
         a {
             img {
-                width: 100%;
-                height: 100%;
-                @include responsiveImage(fill);
+                @include responsiveImage();
             }
         }
     }
@@ -53,11 +51,66 @@ header {
     }
 }
 // for tablet screens from 600px to 992px
-@media (min-width: 600px){
+@media (min-width: 600px) {
+    header {
+        padding-top: 1rem;
+        align-items: center;
+        div.logo{
+            width: 6rem;
+           
+        }
+        nav {
+            // new rule
+            // ***************************
+            div {
+                display: none;
+            }
+            // ***************************
 
+            cursor: default;
+            ul {
+                position: relative; // change
+                background-image: none; // change
+                border-radius: initial; //change
+                padding: 0px; // change
+                top: auto; // change
+                right: auto; // change
+                transform: none; // change
+                transition: none; // change
+                // new rule
+                // ***************************
+                display: flex;
+                width: 12rem;
+                justify-content: space-around;
+                // ***************************
+                li {
+                    // color: #333333; // change
+                    padding: 0px; // change
+                    a {
+                        color: #555555; // change
+                        &:hover{
+                            color: #000000;
+                            border-bottom: 1px solid black;
+                        }
+                    }
+                    // new rules
+                    // ***************************
+                    &:first-child {
+                        display: none;
+                    }
+                    cursor: pointer;
+                    // ***************************
+                }
+            }
+            ul.active {
+                // display: block;
+                transform: none; // change
+                transition: none; // change
+            }
+        }
+    }
 }
 
 // for desktop screens from 992px to 1366px
-@media (min-width: 992px){
-
+@media (min-width: 992px) {
 }

@@ -19,7 +19,7 @@ export default function Footer() {
             <div className="container">
                 {footerLinks}
                 <div className="publishDate">
-                    &copy; July 2020
+                    &copy; dev. Nechir, Auguest 2020
                 </div>
             </div>
 

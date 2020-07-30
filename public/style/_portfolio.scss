@@ -1,4 +1,4 @@
-@import './functions';
+@import "./functions";
 
 main.portfolioMain {
     display: grid;
@@ -145,7 +145,7 @@ section.projects {
                     line-height: 1.5;
                     word-spacing: 2px;
                     color: rgba(75, 75, 75, 1);
-                    text-align: justify;
+                    // text-align: justify;
                 }
                 span {
                     font-family: $nativeFont;
@@ -198,13 +198,103 @@ section.tool {
 }
 // end of Tools section
 
-
 // for tablet screens from 600px to 992px
-@media (min-width: 600px){
+@media (min-width: 600px) {
+    main.portfolioMain {
+        // change
+        grid-template-columns: 10% 40% 40% 10%;
+    }
+    section.heroHeader {
+        // change
+        grid-column: 2 / 4;
+    }
+    section.heroDesc {
+        // change
+        grid-column: 3/4;
+        p {
+            // new rules
+            // **********************
+            padding-top: 2rem;
+            padding-left: 2rem;
+            // **********************
+        }
+    }
+    section.CallToAction {
+        // change
+        grid-column: 2/4;
 
+        // new rules
+        margin-top: 1.9rem;
+    }
+    div.separation {
+        // change
+        grid-column: 2 / 4;
+    }
+    section.projects {
+        // changed
+        grid-template-columns: 10% 40% 40% 10%;
+        h2 {
+            // change
+            grid-column: 2/4;
+        }
+        div {
+            // change
+            grid-column: 2/4;
+            // New rules
+            // ****************************
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-column-gap: 2rem;
+            figure {
+                &:first-child {
+                    grid-column: 1/2;
+                }
+                &:nth-child(2) {
+                    grid-column: 2/3;
+                }
+            }
+            // ****************************
+        }
+    }
+    section.tool {
+        grid-column: 2/4;
+        // new rules
+        // *************************
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+        h2 {
+            grid-column: 1/-1;
+            font-size: 1.7rem;
+            margin-bottom: 2.5rem;
+            // margin-top: rem;
+        }
+        div.toolsHeading {
+            // margin: auto 1rem;
+            margin-bottom: 0px;
+            &:nth-child(2) {
+                grid-column: 1/2;
+            }
+            &:nth-child(4) {
+                grid-row: 2;
+                grid-column: 2/3;
+            }
+        }
+        p {
+            margin: 1rem;
+            color: rgba(0, 0, 0, 0.8);
+            font-size: 0.9rem;
+            &:nth-child(3) {
+                grid-column: 1/2;
+            }
+            &:nth-child(5) {
+                grid-column: 2/3;
+            }
+        }
+        // *************************
+    }
 }
 
 // for desktop screens from 992px to 1366px
-@media (min-width: 992px){
-
+@media (min-width: 992px) {
 }

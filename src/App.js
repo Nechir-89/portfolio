@@ -48,7 +48,7 @@ export default class App extends React.Component {
             <ul className={this.state.isActive ? "active" : "" }>
               <li style={{marginBottom: "1rem", textAlign:"right", color: "white"}}>
                 <img src={crossImage} alt="menu" />
-                </li>
+              </li>
               <li><Link to="/">Portfolio</Link></li>
               <li><Link to="/About">About</Link></li>
             </ul>

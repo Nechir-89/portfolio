@@ -195,7 +195,6 @@ section.projects div figure figcaption p {
   line-height: 1.5;
   word-spacing: 2px;
   color: #4b4b4b;
-  text-align: justify;
 }
 
 section.projects div figure figcaption span {
@@ -254,6 +253,111 @@ section.tool p {
   text-align: center;
   margin-bottom: 2rem;
   color: rgba(0, 0, 0, 0.9);
+}
+
+@media (min-width: 600px) {
+  main.portfolioMain {
+    -ms-grid-columns: 10% 40% 40% 10%;
+        grid-template-columns: 10% 40% 40% 10%;
+  }
+  section.heroHeader {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+  }
+  section.heroDesc {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+  section.heroDesc p {
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+  section.CallToAction {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    margin-top: 1.9rem;
+  }
+  div.separation {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+  }
+  section.projects {
+    -ms-grid-columns: 10% 40% 40% 10%;
+        grid-template-columns: 10% 40% 40% 10%;
+  }
+  section.projects h2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+  }
+  section.projects div {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    grid-column-gap: 2rem;
+  }
+  section.projects div figure:first-child {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  section.projects div figure:nth-child(2) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  section.tool {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  section.tool h2 {
+    grid-column: 1/-1;
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
+  }
+  section.tool div.toolsHeading {
+    margin-bottom: 0px;
+  }
+  section.tool div.toolsHeading:nth-child(2) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  section.tool div.toolsHeading:nth-child(4) {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  section.tool p {
+    margin: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.9rem;
+  }
+  section.tool p:nth-child(3) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  section.tool p:nth-child(5) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
 }
 
 section.contact {
@@ -329,6 +433,46 @@ section.contact .contactLinks .container .contactLink a img {
      object-fit: cover;
 }
 
+@media (min-width: 600px) {
+  section.contact {
+    padding-top: 2rem;
+  }
+  section.contact h2 {
+    font-size: 1.7rem;
+  }
+  section.contact .contactLinks {
+    -ms-grid-columns: 1fr 25rem 1fr;
+        grid-template-columns: 1fr 25rem 1fr;
+  }
+  section.contact .contactLinks .container {
+    -ms-grid-columns: (1fr)[8];
+        grid-template-columns: repeat(8, 1fr);
+    grid-row-gap: 0rem;
+  }
+  section.contact .contactLinks .container .contactLink {
+    margin-top: 1rem;
+  }
+  section.contact .contactLinks .container .contactLink a img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: -webkit-box-shadow ease-in 200ms;
+    transition: -webkit-box-shadow ease-in 200ms;
+    transition: box-shadow ease-in 200ms;
+    transition: box-shadow ease-in 200ms, -webkit-box-shadow ease-in 200ms;
+  }
+  section.contact .contactLinks .container .contactLink a img:hover {
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+    -webkit-transition: -webkit-box-shadow ease-out 200ms;
+    transition: -webkit-box-shadow ease-out 200ms;
+    transition: box-shadow ease-out 200ms;
+    transition: box-shadow ease-out 200ms, -webkit-box-shadow ease-out 200ms;
+  }
+}
+
 footer {
   grid-column: 1 / -1;
   background-color: #333333ee;
@@ -368,6 +512,31 @@ footer div.container div.publishDate {
   font-family: "Roboto", sans-serif;
   font-size: smaller;
   word-spacing: 2px;
+}
+
+@media (min-width: 600px) {
+  footer div.container {
+    -ms-grid-columns: 10% 40% 40% 10%;
+        grid-template-columns: 10% 40% 40% 10%;
+  }
+  footer div.container a {
+    text-align: center;
+  }
+  footer div.container div.publishDate {
+    color: whitesmoke;
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    font-family: "Roboto", sans-serif;
+    font-size: smaller;
+    word-spacing: 2px;
+  }
 }
 
 div.about main {
@@ -483,8 +652,6 @@ header div.logo {
 }
 
 header div.logo a img {
-  width: 100%;
-  height: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -528,6 +695,62 @@ header nav ul.active {
   transition: -webkit-transform ease-in 300ms;
   transition: transform ease-in 300ms;
   transition: transform ease-in 300ms, -webkit-transform ease-in 300ms;
+}
+
+@media (min-width: 600px) {
+  header {
+    padding-top: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header div.logo {
+    width: 6rem;
+  }
+  header nav {
+    cursor: default;
+  }
+  header nav div {
+    display: none;
+  }
+  header nav ul {
+    position: relative;
+    background-image: none;
+    border-radius: initial;
+    padding: 0px;
+    top: auto;
+    right: auto;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 12rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header nav ul li {
+    padding: 0px;
+    cursor: pointer;
+  }
+  header nav ul li a {
+    color: #555555;
+  }
+  header nav ul li a:hover {
+    color: #000000;
+    border-bottom: 1px solid black;
+  }
+  header nav ul li:first-child {
+    display: none;
+  }
+  header nav ul.active {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 div.classTimeProject main {
