@@ -6,12 +6,13 @@ div.about {
         padding-bottom: 2rem;
         div.cover {
             grid-column: 1 / -1;
-            height: 13rem;
-            // background-image: url("cover.svg");
-            // background-size: cover;
+            height: 14rem;
+            border-bottom: 1px solid #444444;
+            box-shadow: 0px 10px 1px #F7DE8F;
             margin-bottom: 1.5rem;
-            position: relative;
             
+            position: relative;
+
             &::before {
                 content: "";
                 background: url(cover.jpg);
@@ -23,6 +24,7 @@ div.about {
                 right: 0;
                 position: absolute;
                 z-index: -1;
+                
             }
 
             display: grid;
@@ -35,8 +37,8 @@ div.about {
                 // transform: rotate(45deg);
                 img {
                     width: 8rem;
-                    height: 8rem;
-                    object-fit: cover;
+                    height: auto;
+                    // object-fit: cover;
                     border-radius: 5px;
                     transform: rotate(0deg);
                     padding: 0.3rem;
@@ -75,4 +77,14 @@ div.about {
             letter-spacing: 0.5px;
         }
     }
+}
+
+// for tablet screens from 600px to 992px
+@media (min-width: 600px){
+
+}
+
+// for desktop screens from 992px to 1366px
+@media (min-width: 992px){
+
 }
