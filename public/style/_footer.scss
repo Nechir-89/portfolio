@@ -14,9 +14,10 @@ footer {
             font-family: $nativeFont;
             word-spacing: 2px;
             font-size: smaller;
+            justify-self: flex-start;
         }
         div.publishDate {
-            color: whitesmoke;
+            color: yellow;
             grid-row: 4;
             grid-column: 2 / 4;
             justify-self: center;
@@ -42,20 +43,23 @@ footer {
 
 
             div.publishDate {
-                color: whitesmoke;
+                color: yellow;
                 grid-row: 4;
                 grid-column: 2 / 4;
-                justify-self: center;
+                justify-self: flex-end;
                 align-self: flex-end;
                 font-family: $nativeFont;
                 font-size: smaller;
                 word-spacing: 2px;
+                padding-bottom: 1rem;
             }
         }
     }
 }
-
-// for desktop screens from 992px to 1366px
-@media (min-width: 992px){
-
+@media (min-width: 1366px){
+    footer {
+        div.container {
+            grid-template-columns: 1fr 546.5px 546.5px 1fr;
+        }
+    }
 }

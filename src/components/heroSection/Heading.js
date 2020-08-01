@@ -4,9 +4,9 @@ function Heading() {
     return (
         <section className="heroHeader" id="herosection">
             <h1>
-                Designer<br /> 
-                & <br />
-                Front-End Developer
+                <span>Designer </span>
+                <span>& </span>
+                <span>Front-End Developer</span>
             </h1>
         </section>
     )

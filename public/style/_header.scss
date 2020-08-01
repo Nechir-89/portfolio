@@ -113,4 +113,22 @@ header {
 
 // for desktop screens from 992px to 1366px
 @media (min-width: 992px) {
+    header {
+        display: grid;
+        grid-template-columns: 10% 40% 40% 10%;
+        div.logo{
+           grid-column: 2/3;
+        }
+        nav{
+            grid-column: 3/4;
+            justify-self: flex-end;
+        }
+    }
+}
+
+@media (min-width: 1366px){
+    header{
+        grid-template-columns: 1fr 546.5px 546.5px 1fr;
+    }
+    
 }
