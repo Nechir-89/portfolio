@@ -21,3 +21,15 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# css and scss files
+/public/style/_about.scss
+/public/style/_classtimeproject.scss
+/public/style/_contact.scss
+/public/style/_footer.scss
+/public/style/_fucntion.scss
+/public/style/_header.scss
+/public/style/_portfolio.scss
+/public/style/_veriable.scss
+/public/style/index.scss
+/public/style/index.css.map
