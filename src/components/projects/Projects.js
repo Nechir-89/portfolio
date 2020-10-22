@@ -24,7 +24,7 @@ function Projects() {
             />
 
             <Project
-                projectTitle="Class Time Schedule"
+                projectTitle="Class Schedule"
                 imageSrc={ImageProject2}
                 imageAlt="Class Time Schedule"
                 url="/ClassTimeProject"
