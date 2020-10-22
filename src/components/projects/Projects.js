@@ -32,9 +32,7 @@ function Projects() {
                     </figure>
                 )
             }
-
         </div>
     )
 }
-
 export default Projects;

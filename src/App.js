@@ -3,7 +3,12 @@ import Portfolio from './components/Portfolio';
 import About from './components/About';
 
 // routing
-import { BrowserRouter, Link, Route } from 'react-router-dom'
+import {
+  BrowserRouter,
+  Link,
+  Route,
+  Switch
+} from 'react-router-dom'
 
 // images
 import MenuImg from './menu.svg'
@@ -14,16 +19,16 @@ import logo from './logo.jpg'
 import ClassTimeProject from "./components/ClassTimeScheduleProject"
 
 export default class App extends React.Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
       isActive: false
     };
     this.handleClic = this.handleClic.bind(this);
   }
-  handleClic(){
+  handleClic() {
     this.setState(prevState => {
-      return {isActive: !prevState.isActive}
+      return { isActive: !prevState.isActive }
     });
 
   }
@@ -45,8 +50,8 @@ export default class App extends React.Component {
               <img src={MenuImg} alt="menu" />
             </div>
             {/* ------------------------------ */}
-            <ul className={this.state.isActive ? "active" : "" }>
-              <li style={{marginBottom: "1rem", textAlign:"right", color: "white"}}>
+            <ul className={this.state.isActive ? "active" : ""}>
+              <li style={{ marginBottom: "1rem", textAlign: "right", color: "white" }}>
                 <img src={crossImage} alt="menu" />
               </li>
               <li><Link to="/">Portfolio</Link></li>
@@ -54,11 +59,17 @@ export default class App extends React.Component {
             </ul>
           </nav>
         </header>
-        <div>
-          <Route exact path="/" component={Portfolio} />
-          <Route path="/About" component={About} />
-          <Route path="/ClassTimeProject" component={ClassTimeProject} />
-        </div>
+        <Switch>
+          <Route exact path="/">
+            <Portfolio />
+          </Route>
+          <Route path="/About">
+            <About />
+          </Route>
+          <Route path="/ClassTimeProject">
+            <ClassTimeProject />
+          </Route>
+        </Switch>
       </BrowserRouter>
 
     )
