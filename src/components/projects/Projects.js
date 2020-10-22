@@ -1,39 +1,38 @@
 import React from "react"
-import Project from "./children/Project"
 
-import ImageProject1 from "./brhawebsite.svg"
-import ImageProject2 from "./classTime.svg"
-
+import Data from './ProjectData'
+import {Link } from 'react-router-dom'
 function Projects() {
     return (
         <div>
-            <Project
-                projectTitle="BRHA"
-                imageSrc={ImageProject1}
-                imageAlt="BRHA Website"
-                url="https://www.brha-duhok.org/"
-                id="1"
-                desc="
-                        This project built with WordPress as it has been asked by the agency.
-                        the project has many pages, on each page, there are several sections. 
-                        All of them were designed and developed from scratch using a WordPress 
-                        Elementor plugin.
-                        the website designed to be a good fit for the desktop screens only, 
-                        and yeah definitely for some reason.
-                    "
-            />
+            {
+                Data.map(project =>
+                    <figure key={project.id}>
+                        {
+                            project.url.search('http') !== -1? 
+                            <a href={project.url} target='_blank' rel='noreferrer noopener'>
+                                <img
+                                    src={project.imageSrc}
+                                    alt={project.alt}
+                                />
+                            </a> :
+                            <Link to={project.url}>
+                            <img
+                                src={project.imageSrc}
+                                alt={project.alt}
+                            />
+                        </Link>
+                        }
+                        
+                        <figcaption>
+                            <h4>{project.id}- {project.title}</h4>
+                            <p>{project.desc}</p>
+                            <span>Click <a href={project.url}>here</a> to find it out.</span>
+                        </figcaption>
+                    </figure>
+                )
+            }
 
-            <Project
-                projectTitle="Class Time Schedule"
-                imageSrc={ImageProject2}
-                imageAlt="Class Time Schedule"
-                url="/ClassTimeProject"
-                id="2"
-                desc="
-                        This project is basically build for computer science department (CS) 
-                        to show class time on TV screens. The project is built in May 2019. 
-                    "
-            />
         </div>
     )
 }
