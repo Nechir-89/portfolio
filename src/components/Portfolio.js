@@ -7,7 +7,7 @@ import CallToAction from "./heroSection/CallToAction"
 
 import Projects from "./projects/Projects"
 import Tools from "./tools/Tools.js"
-import Contact from "./contact/Contact"
+import Contact from "./Contact"
 import Footer from "./Footer"
 
 export default function Portfolio() {

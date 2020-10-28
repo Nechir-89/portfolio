@@ -20,10 +20,10 @@ section.contact {
         justify-content: center;
         align-items: center;
         margin-bottom: 1.3rem;
-        img {
-            width: 1.5rem;
-            height: 1.5rem;
-            margin-right: 0.5rem;
+        svg{
+            width: 1.75rem;
+            height: 1.75rem;
+            margin-right: 0.7rem;
         }
     }
 
@@ -42,6 +42,11 @@ section.contact {
                 a {
                     width: 1.5rem;
                     height: 1.5rem;
+                    svg {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        fill: #202020;
+                    }
                     img {
                         width: 1.5rem;
                         height: 1.5rem;

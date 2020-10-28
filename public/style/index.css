@@ -498,10 +498,10 @@ section.contact .email {
   margin-bottom: 1.3rem;
 }
 
-section.contact .email img {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 0.5rem;
+section.contact .email svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.7rem;
 }
 
 section.contact .contactLinks {
@@ -533,6 +533,12 @@ section.contact .contactLinks .container .contactLink {
 section.contact .contactLinks .container .contactLink a {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+section.contact .contactLinks .container .contactLink a svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #202020;
 }
 
 section.contact .contactLinks .container .contactLink a img {
