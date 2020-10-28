@@ -11,6 +11,20 @@
   overflow: hidden;
 }
 
+/**************
+
+    Mobile Screens
+      (Default)
+    -------------
+    -           -
+    -           -
+    - Min 310px -
+    - Max 600px -
+    -           -
+    -           -
+    -------------
+
+*****************/
 main.portfolioMain {
   display: -ms-grid;
   display: grid;
@@ -261,6 +275,11 @@ section.tool p {
   color: rgba(0, 0, 0, 0.9);
 }
 
+/* *****************
+    tablet screens 
+    600px to 992px
+
+*********************/
 @media (min-width: 600px) {
   main.portfolioMain {
     -ms-grid-columns: 10% 40% 40% 10%;
@@ -311,16 +330,6 @@ section.tool p {
         grid-template-columns: 50% 50%;
     grid-column-gap: 2rem;
   }
-  section.projects div figure:first-child {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-  }
-  section.projects div figure:nth-child(2) {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-  }
   section.tool {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
@@ -369,6 +378,12 @@ section.tool p {
   }
 }
 
+/* *************
+
+    Desktop Screens
+    992px to 1366px
+
+* ****************/
 @media (min-width: 992px) {
   section.heroHeader {
     -ms-grid-column: 2;
@@ -446,6 +461,12 @@ section.tool p {
   }
 }
 
+/******************
+
+    Large Screens
+    Larger than 1366px
+
+*****************/
 @media (min-width: 1366px) {
   main.portfolioMain {
     -ms-grid-columns: 1fr 546.5px 546.5px 1fr;

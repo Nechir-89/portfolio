@@ -18,7 +18,7 @@ export default [
     {
         id: 3,
         title: 'Todo List',
-        imgSrc: '/images/todoList.svg',
+        imgSrc: '/images/todolist.png',
         alt: 'Todo List',
         url: 'https://list-2-do.netlify.app/',
         desc:'This project was built to manage tasks user will perform for a completing specific mision',
@@ -26,9 +26,17 @@ export default [
     {
         id: 4,
         title: 'Weather App',
-        imgSrc: '/images/weather.svg',
+        imgSrc: '/images/weatherapp.PNG',
         alt: 'Weather App',
         url: 'https://weather2you.netlify.app/',
         desc:'This was my fourth project I\'v been working on, This project gives user ability to check weather based on open-weather website data.',
+    },
+    {
+        id: 5,
+        title: 'Conference Schedule',
+        imgSrc: '/images/conferenceSchedule.PNG',
+        alt: 'Conference Schedule',
+        url: 'https://conference-schedules.netlify.app/',
+        desc:'In collaburation with Analuciachin, we have built conference schedule.',
     }
 ];

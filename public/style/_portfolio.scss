@@ -1,10 +1,24 @@
 @import "./functions";
 
+/**************
+
+    Mobile Screens
+      (Default)
+    -------------
+    -           -
+    -           -
+    - Min 310px -
+    - Max 600px -
+    -           -
+    -           -
+    -------------
+
+*****************/
 main.portfolioMain {
     display: grid;
     grid-template-columns: 1fr 19.2rem 1fr;
 }
-// Hero section 1
+
 section.heroHeader {
     grid-column: 2 / 3;
     h1 {
@@ -72,9 +86,7 @@ section.CallToAction {
         }
     }
 }
-// End of Hero section
 
-// separation
 div.separation {
     grid-column: 2 / 3;
     margin-top: 2rem;
@@ -104,7 +116,6 @@ div.separation {
     }
 }
 
-// start of Project section
 section.projects {
     grid-column: 1/-1;
     margin-top: 0rem;
@@ -170,9 +181,7 @@ section.projects {
         }
     }
 }
-// End of projects section
 
-// start of Tools section
 section.tool {
     grid-column: 2/3;
     padding-top: 2rem;
@@ -202,65 +211,43 @@ section.tool {
         color: rgba(0, 0, 0, 0.9);
     }
 }
-// end of Tools section
+/* *****************
+    tablet screens 
+    600px to 992px
 
-// for tablet screens from 600px to 992px
+*********************/
 @media (min-width: 600px) {
     main.portfolioMain {
-        // change
         grid-template-columns: 10% 40% 40% 10%;
     }
     section.heroHeader {
-        // change
         grid-column: 2 / 4;
     }
     section.heroDesc {
-        // change
         grid-column: 3/4;
         p {
-            // new rules
-            // **********************
             padding-top: 2rem;
             padding-left: 2rem;
-            // **********************
         }
     }
     section.CallToAction {
-        // change
         grid-column: 2/4;
-
-        // new rules
         margin-top: 1.9rem;
     }
     div.separation {
-        // change
         grid-column: 2 / 4;
     }
     section.projects {
-        // changed
         grid-template-columns: 10% 40% 40% 10%;
         h2 {
-            // change
             grid-column: 2/4;
             font-size: 1.7rem;
         }
         div {
-            // change
             grid-column: 2/4;
-            // New rules
-            // ****************************
             display: grid;
             grid-template-columns: 50% 50%;
             grid-column-gap: 2rem;
-            figure {
-                &:first-child {
-                    grid-column: 1/2;
-                }
-                &:nth-child(2) {
-                    grid-column: 2/3;
-                }
-            }
-            // ****************************
         }
     }
     section.tool {
@@ -299,11 +286,15 @@ section.tool {
                 grid-column: 2/3;
             }
         }
-        // *************************
     }
 }
 
-// for desktop screens from 992px to 1366px
+/* *************
+
+    Desktop Screens
+    992px to 1366px
+
+* ****************/
 @media (min-width: 992px) {
     section.heroHeader {
         // change
@@ -394,7 +385,12 @@ section.tool {
         }
     }
 }
+/******************
 
+    Large Screens
+    Larger than 1366px
+
+*****************/
 @media (min-width: 1366px) {
     main.portfolioMain {
         grid-template-columns: 1fr 546.5px 546.5px 1fr;
