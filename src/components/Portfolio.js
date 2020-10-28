@@ -4,10 +4,11 @@ import HeroHeading from "./heroSection/Heading"
 import HeroFigure from "./heroSection/Figure"
 import HeroDesc from "./heroSection/Desc"
 import CallToAction from "./heroSection/CallToAction"
+
 import Projects from "./projects/Projects"
 import Tools from "./tools/Tools.js"
 import Contact from "./contact/Contact"
-import Footer from "./Footer/Footer"
+import Footer from "./Footer"
 
 export default function Portfolio() {
   return (
