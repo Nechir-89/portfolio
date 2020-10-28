@@ -5,6 +5,7 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 #root {
@@ -40,7 +41,6 @@ section.heroHeader {
 
 section.heroHeader h1 {
   text-align: center;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.7rem;
   line-height: 1.3;
@@ -77,7 +77,6 @@ section.heroDesc {
 
 section.heroDesc p {
   text-align: center;
-  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   word-spacing: 2px;
   color: #4b4b4b;
@@ -107,7 +106,6 @@ section.CallToAction a {
   color: #ffcd04;
   background-color: #202020;
   border-radius: 10px;
-  font-family: "Roboto", sans-serif;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transition: -webkit-transform ease-out 200ms;
@@ -175,7 +173,6 @@ section.projects h2 {
   text-align: center;
   padding-top: 4rem;
   padding-bottom: 1.5rem;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
 }
 
@@ -206,11 +203,9 @@ section.projects div figure figcaption {
 
 section.projects div figure figcaption h4 {
   margin-bottom: 0.5rem;
-  font-family: "Roboto", sans-serif;
 }
 
 section.projects div figure figcaption p {
-  font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
   line-height: 1.5;
   word-spacing: 2px;
@@ -218,7 +213,6 @@ section.projects div figure figcaption p {
 }
 
 section.projects div figure figcaption span {
-  font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
 }
 
@@ -243,7 +237,6 @@ section.tool {
 section.tool h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
   color: rgba(0, 0, 0, 0.9);
 }
@@ -262,12 +255,10 @@ section.tool div.toolsHeading {
 }
 
 section.tool div.toolsHeading h3 {
-  font-family: "Roboto", sans-serif;
   margin-left: 0.5rem;
 }
 
 section.tool p {
-  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   word-spacing: 2px;
   text-align: center;
@@ -490,7 +481,6 @@ section.contact {
 section.contact h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
   color: rgba(0, 0, 0, 0.9);
 }
@@ -506,7 +496,6 @@ section.contact .email {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1.3rem;
-  font-family: "Roboto", sans-serif;
 }
 
 section.contact .email img {
@@ -610,7 +599,6 @@ footer div.container {
 footer div.container a {
   color: whitesmoke;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
   font-size: smaller;
   justify-self: flex-start;
@@ -627,7 +615,6 @@ footer div.container div.publishDate {
       justify-self: center;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  font-family: "Roboto", sans-serif;
   font-size: smaller;
   word-spacing: 2px;
 }
@@ -650,7 +637,6 @@ footer div.container div.publishDate {
     justify-self: flex-end;
     -ms-flex-item-align: end;
         align-self: flex-end;
-    font-family: "Roboto", sans-serif;
     font-size: smaller;
     word-spacing: 2px;
     padding-bottom: 1rem;
@@ -737,13 +723,11 @@ div.about main div.cover figure img:hover {
 
 div.about main div.cover figure figcaption h3 {
   color: #222222;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
 }
 
 div.about main div.cover figure figcaption p {
   color: #444444;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
 }
 
@@ -753,7 +737,6 @@ div.about main p.about-desc {
   grid-column: 2/3;
   line-height: 1.6;
   word-spacing: 4px;
-  font-family: "Roboto", sans-serif;
   letter-spacing: 0.5px;
 }
 
@@ -815,7 +798,6 @@ header nav ul {
 header nav ul li {
   color: whitesmoke;
   padding: 0.35rem 0;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
 }
 
@@ -946,12 +928,10 @@ div.classTimeProject main section.projectHeader figure img {
 
 div.classTimeProject main section.projectHeader figure figcaption h3 {
   padding: 1rem 0 0.5rem;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
 }
 
 div.classTimeProject main section.projectHeader figure figcaption p {
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
   line-height: 1.5;
   font-size: 0.9rem;
@@ -968,7 +948,6 @@ div.classTimeProject main section.projectBody h3 {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
 }
 
@@ -993,7 +972,6 @@ div.classTimeProject main section.projectBody div.card figure img {
 }
 
 div.classTimeProject main section.projectBody div.card figure figcaption p {
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
   font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.9);

@@ -2,20 +2,11 @@ import React from 'react';
 import Portfolio from './components/Portfolio';
 import About from './components/About';
 
-// routing
-import {
-  BrowserRouter,
-  Link,
-  Route,
-  Switch
-} from 'react-router-dom'
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
 
-// images
-import MenuImg from './menu.svg'
-import crossImage from './cross.svg'
-import logo from './logo.jpg'
 
-// import ClassTimeScheduleProject
+
+
 import ClassTimeProject from "./components/ClassTimeScheduleProject"
 
 export default class App extends React.Component {
@@ -40,19 +31,19 @@ export default class App extends React.Component {
           {/* logo */}
           <div className="logo">
             <a href="/">
-              <img src={logo} alt="dev Nechir" />
+              <img src='/images/logo.jpg' alt="dev Nechir" />
             </a>
           </div>
           {/* menu */}
           <nav onClick={this.handleClic}>
             {/* ------------------------------ */}
             <div>
-              <img src={MenuImg} alt="menu" />
+              <img src='/images/menu.svg' alt="menu" />
             </div>
             {/* ------------------------------ */}
             <ul className={this.state.isActive ? "active" : ""}>
               <li style={{ marginBottom: "1rem", textAlign: "right", color: "white" }}>
-                <img src={crossImage} alt="menu" />
+                <img src='/images/cross.svg' alt="menu" />
               </li>
               <li><Link to="/">Portfolio</Link></li>
               <li><Link to="/About">About</Link></li>
