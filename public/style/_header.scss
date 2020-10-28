@@ -54,9 +54,8 @@ header {
     header {
         padding-top: 1rem;
         align-items: center;
-        div.logo{
+        div.logo {
             width: 6rem;
-           
         }
         nav {
             // new rule
@@ -87,7 +86,7 @@ header {
                     padding: 0px; // change
                     a {
                         color: #555555; // change
-                        &:hover{
+                        &:hover {
                             color: #000000;
                             border-bottom: 1px solid black;
                         }
@@ -115,19 +114,18 @@ header {
     header {
         display: grid;
         grid-template-columns: 10% 40% 40% 10%;
-        div.logo{
-           grid-column: 2/3;
+        div.logo {
+            grid-column: 2/3;
         }
-        nav{
+        nav {
             grid-column: 3/4;
             justify-self: flex-end;
         }
     }
 }
 
-@media (min-width: 1366px){
-    header{
+@media (min-width: 1366px) {
+    header {
         grid-template-columns: 1fr 546.5px 546.5px 1fr;
     }
-    
 }

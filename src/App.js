@@ -4,7 +4,7 @@ import About from './components/About';
 
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
 
-
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 
 import ClassTimeProject from "./components/ClassTimeScheduleProject"
@@ -37,13 +37,13 @@ export default class App extends React.Component {
           {/* menu */}
           <nav onClick={this.handleClic}>
             {/* ------------------------------ */}
-            <div>
-              <img src='/images/menu.svg' alt="menu" />
+            <div className='menuIcon'>
+              <AiOutlineMenu />
             </div>
             {/* ------------------------------ */}
             <ul className={this.state.isActive ? "active" : ""}>
               <li style={{ marginBottom: "1rem", textAlign: "right", color: "white" }}>
-                <img src='/images/cross.svg' alt="menu" />
+                <AiOutlineClose />
               </li>
               <li><Link to="/">Portfolio</Link></li>
               <li><Link to="/About">About</Link></li>
