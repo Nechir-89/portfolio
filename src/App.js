@@ -31,7 +31,7 @@ export default class App extends React.Component {
           {/* logo */}
           <div className="logo">
             <a href="/">
-              <img src='/images/logo.jpg' alt="dev Nechir" />
+              <img src='/images/logo.svg' alt="dev Nechir" />
             </a>
           </div>
           {/* menu */}
