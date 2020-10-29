@@ -261,7 +261,6 @@ section.tool div.toolsHeading h3 {
 section.tool p {
   line-height: 1.5;
   word-spacing: 2px;
-  text-align: center;
   margin-bottom: 2rem;
   color: rgba(0, 0, 0, 0.9);
 }
@@ -337,9 +336,6 @@ section.tool p {
     font-size: 1.7rem;
     margin-bottom: 2.5rem;
   }
-  section.tool div.toolsHeading {
-    margin-bottom: 0px;
-  }
   section.tool div.toolsHeading:nth-child(2) {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -353,7 +349,8 @@ section.tool p {
     grid-column: 2/3;
   }
   section.tool p {
-    margin: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: rgba(0, 0, 0, 0.8);
     font-size: 0.9rem;
   }
@@ -439,14 +436,9 @@ section.tool p {
   }
   section.tool p {
     font-size: 1rem;
-    width: 20rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     line-height: 1.7;
-  }
-  section.tool p:nth-child(3) {
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
-  section.tool p:nth-child(5) {
     -ms-grid-column-align: center;
         justify-self: center;
   }

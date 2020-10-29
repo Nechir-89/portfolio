@@ -6,7 +6,7 @@ import HeroDesc from "./heroSection/Desc"
 import CallToAction from "./heroSection/CallToAction"
 
 import Projects from "./projects/Projects"
-import Tools from "./tools/Tools.js"
+import Tools from "./Tools.js"
 import Contact from "./Contact"
 import Footer from "./Footer"
 

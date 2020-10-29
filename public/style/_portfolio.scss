@@ -204,7 +204,7 @@ section.tool {
     p {
         line-height: 1.5;
         word-spacing: 2px;
-        text-align: center;
+        // text-align: center;
         margin-bottom: 2rem;
         color: rgba(0, 0, 0, 0.9);
     }
@@ -264,7 +264,7 @@ section.tool {
         }
         div.toolsHeading {
             // margin: auto 1rem;
-            margin-bottom: 0px;
+            
             &:nth-child(2) {
                 grid-column: 1/2;
             }
@@ -274,7 +274,8 @@ section.tool {
             }
         }
         p {
-            margin: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
             color: rgba(0, 0, 0, 0.8);
             font-size: 0.9rem;
             &:nth-child(3) {
@@ -372,14 +373,10 @@ section.tool {
     section.tool {
         p {
             font-size: 1rem;
-            width: 20rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
             line-height: 1.7;
-            &:nth-child(3) {
-                justify-self: center;
-            }
-            &:nth-child(5) {
-                justify-self: center;
-            }
+            justify-self: center;
         }
     }
 }
