@@ -14,10 +14,32 @@ export default function Portfolio() {
   return (
     <main className="portfolioMain">
       {/* Hero section */}
-      <HeroHeading />
-      <HeroFigure />
-      <HeroDesc />
-      <CallToAction />
+      {/* <HeroHeading /> */}
+      <section className="heroHeader" id="herosection">
+        <h1>
+          <span>Web Designer </span>
+          <span>& </span>
+          <span>Developer</span>
+        </h1>
+      </section>
+      {/* <HeroFigure /> */}
+      <section className="heroFigure">
+        <figure>
+          <img src='/images/illistration2.svg' alt="Work Illistration" />
+        </figure>
+      </section>
+      {/* <HeroDesc /> */}
+      <section className="heroDesc">
+        <p>
+          Hi, I am Nechir /nɪtʃi:r/<br />
+                I design and develop beautiful, fast, and easy to use websites and
+                web apps.
+           </p>
+      </section>
+      {/* <CallToAction /> */}
+      <section className="CallToAction">
+        <a href="#contact">Contact Me</a>
+      </section>
       {/* Separation */}
       <div className="separation">
         <div className="custom-shape-divider-top-1595766065">

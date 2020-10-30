@@ -31,6 +31,7 @@ main.portfolioMain {
   display: grid;
   -ms-grid-columns: 1fr 19.2rem 1fr;
       grid-template-columns: 1fr 19.2rem 1fr;
+  background-color: #4D5099;
 }
 
 section.heroHeader {
@@ -777,7 +778,7 @@ header {
   padding-top: 1rem;
   padding-right: 1rem;
   position: relative;
-  margin-bottom: 2.5rem;
+  background-color: #202020;
 }
 
 header div.logo {
@@ -792,6 +793,10 @@ header div.logo a img {
 
 header nav {
   cursor: pointer;
+}
+
+header nav div.menuIcon svg {
+  fill: white;
 }
 
 header nav ul {
@@ -832,7 +837,8 @@ header nav ul.active {
 
 @media (min-width: 600px) {
   header {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -869,11 +875,11 @@ header nav ul.active {
     cursor: pointer;
   }
   header nav ul li a {
-    color: #555555;
+    color: #FFCD04;
   }
   header nav ul li a:hover {
-    color: #000000;
-    border-bottom: 1px solid black;
+    color: #ac8b09;
+    border-bottom: 1px solid #ac8b09;
   }
   header nav ul li:first-child {
     display: none;

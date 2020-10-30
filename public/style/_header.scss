@@ -8,7 +8,8 @@ header {
     position: relative;
     // overflow-x: hidden;
     // overflow-y: visible;
-    margin-bottom: 2.5rem;
+    background-color: #202020;
+    // margin-bottom: 2.5rem;
     div.logo {
         width: 4rem;
         height: 2rem;
@@ -21,6 +22,12 @@ header {
 
     nav {
         cursor: pointer;
+        div.menuIcon{
+            svg{
+                fill: white;
+                
+            }
+        }
         ul {
             list-style-type: none;
             position: absolute;
@@ -52,19 +59,16 @@ header {
 // for tablet screens from 600px to 992px
 @media (min-width: 600px) {
     header {
-        padding-top: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
         align-items: center;
         div.logo {
             width: 6rem;
         }
         nav {
-            // new rule
-            // ***************************
             div {
                 display: none;
             }
-            // ***************************
-
             cursor: default;
             ul {
                 position: relative; // change
@@ -85,10 +89,10 @@ header {
                     // color: #333333; // change
                     padding: 0px; // change
                     a {
-                        color: #555555; // change
+                        color: #FFCD04; // change
                         &:hover {
-                            color: #000000;
-                            border-bottom: 1px solid black;
+                            color: #ac8b09;
+                            border-bottom: 1px solid #ac8b09;
                         }
                     }
                     // new rules
