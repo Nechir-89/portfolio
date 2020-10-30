@@ -11,7 +11,7 @@ function Tools() {
             {/* design */}
             <div className="toolsHeading">
                 <CgIfDesign />
-                <h3>Design</h3>
+                <h3 style={{color:'#715401'}}>Design</h3>
             </div>
             <p>
                 Building wireframes to meet business goals with an eye to UI design 
@@ -23,7 +23,7 @@ function Tools() {
             {/* development */}
             <div className="toolsHeading">
                 <BsFileEarmarkCode />
-                <h3>Development</h3>
+                <h3 style={{color: '#714001'}}>Development</h3>
             </div>
             <p>
                 Libraries like <strong>React</strong> are connecting all 

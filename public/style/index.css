@@ -147,6 +147,8 @@ section.projects {
   display: grid;
   -ms-grid-columns: 1fr 19.2rem 1fr;
       grid-template-columns: 1fr 19.2rem 1fr;
+  -webkit-box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.35);
 }
 
 section.projects h2 {
@@ -223,7 +225,7 @@ section.tool h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   word-spacing: 2px;
-  color: rgba(0, 0, 0, 0.9);
+  color: #0C0F4F;
 }
 
 section.tool div.toolsHeading {
@@ -237,6 +239,11 @@ section.tool div.toolsHeading {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0.7rem;
+}
+
+section.tool div.toolsHeading svg {
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 section.tool div.toolsHeading h3 {
@@ -475,10 +482,10 @@ section.tool p {
 
 section.contact {
   grid-column: 1 / -1;
-  background-color: #3333335a;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  border-top: 1px solid #555555;
+  -webkit-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.35);
   border-bottom: 1px solid whitesmoke;
 }
 
@@ -486,7 +493,7 @@ section.contact h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   word-spacing: 2px;
-  color: rgba(0, 0, 0, 0.9);
+  color: #0C0F4F;
 }
 
 section.contact .email {
@@ -506,6 +513,13 @@ section.contact .email svg {
   width: 1.75rem;
   height: 1.75rem;
   margin-right: 0.7rem;
+  fill: #0C0F4F;
+}
+
+section.contact .email span {
+  color: #000000;
+  font-size: 1rem;
+  letter-spacing: 2px;
 }
 
 section.contact .contactLinks {
@@ -542,7 +556,7 @@ section.contact .contactLinks .container .contactLink a {
 section.contact .contactLinks .container .contactLink a svg {
   width: 1.5rem;
   height: 1.5rem;
-  fill: #202020;
+  fill: #333784;
 }
 
 section.contact .contactLinks .container .contactLink a img {

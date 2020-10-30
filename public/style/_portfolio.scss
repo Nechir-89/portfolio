@@ -109,6 +109,7 @@ section.projects {
     // ----------------------------
     // border-radius: 10% 10% 35% 35% / 0% 0% 10% 10%;
     // border-bottom: 1px solid silver;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.35);
     h2 {
         grid-column: 2/3;
         text-align: center;
@@ -164,18 +165,24 @@ section.projects {
 section.tool {
     grid-column: 2/3;
     padding-top: 2rem;
+    // background-color: red;
+    
     h2 {
         text-align: center;
         margin-bottom: 1.5rem;
 
         word-spacing: 2px;
-        color: rgba(0, 0, 0, 0.9);
+        color: #0C0F4F;
     }
     div.toolsHeading {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 0.7rem;
+        svg{
+            width: 1.75rem;
+            height: 1.75rem;
+        }
         h3 {
             margin-left: 0.5rem;
         }
