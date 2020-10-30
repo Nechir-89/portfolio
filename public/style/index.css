@@ -8,6 +8,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #root {
   overflow: hidden;
 }
@@ -513,7 +517,7 @@ section.contact .email svg {
   width: 1.75rem;
   height: 1.75rem;
   margin-right: 0.7rem;
-  fill: #0C0F4F;
+  fill: #222222;
 }
 
 section.contact .email span {
@@ -556,14 +560,7 @@ section.contact .contactLinks .container .contactLink a {
 section.contact .contactLinks .container .contactLink a svg {
   width: 1.5rem;
   height: 1.5rem;
-  fill: #333784;
-}
-
-section.contact .contactLinks .container .contactLink a img {
-  width: 1.5rem;
-  height: 1.5rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  fill: #000000;
 }
 
 @media (min-width: 600px) {
@@ -633,7 +630,7 @@ footer div.container div.links {
 }
 
 footer div.container div.links a {
-  color: whitesmoke;
+  color: silver;
   font-size: 0.8rem;
   word-spacing: 2px;
   text-align: left;
@@ -891,7 +888,7 @@ header nav ul.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 12rem;
+    width: 20rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }

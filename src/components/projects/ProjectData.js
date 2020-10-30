@@ -12,7 +12,7 @@ export default [
         title: 'Class Schedule',
         imgSrc: '/images/classTime.svg',
         alt: 'Class Schedule',
-        url: '/projects/classScheduleProject',
+        url: '/ClassTimeProject',
         desc:'This project is basically build for computer science department (CS) to show class time on TV screens. The project is built in May 2019.',
     },
     {
