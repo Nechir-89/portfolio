@@ -31,44 +31,57 @@ main.portfolioMain {
   display: grid;
   -ms-grid-columns: 1fr 19.2rem 1fr;
       grid-template-columns: 1fr 19.2rem 1fr;
-  background-color: #4D5099;
 }
 
-section.heroHeader {
+div.herosection {
+  grid-column: 1/-1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  background-image: url("/images/wave.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 19.2rem 1fr;
+      grid-template-columns: 1fr 19.2rem 1fr;
+}
+
+div.herosection section.heroHeader {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
 }
 
-section.heroHeader h1 {
+div.herosection section.heroHeader h1 {
   text-align: center;
-  font-weight: 500;
-  font-size: 1.7rem;
+  font-weight: bold;
+  font-size: 1.75rem;
   line-height: 1.3;
-  color: rgba(0, 0, 0, 0.8);
+  color: whitesmoke;
 }
 
-section.heroHeader h1 span {
+div.herosection section.heroHeader h1 span {
   display: block;
 }
 
-section.heroFigure {
+div.herosection section.heroFigure {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
   margin-top: 1.9rem;
 }
 
-section.heroFigure figure {
+div.herosection section.heroFigure figure {
   width: 100%;
 }
 
-section.heroFigure figure img {
+div.herosection section.heroFigure figure img {
   max-width: 100%;
   height: auto;
 }
 
-section.heroDesc {
+div.herosection section.heroDesc {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -76,14 +89,14 @@ section.heroDesc {
   margin-bottom: 2rem;
 }
 
-section.heroDesc p {
+div.herosection section.heroDesc p {
   text-align: center;
   line-height: 1.5;
   word-spacing: 2px;
-  color: #4b4b4b;
+  color: whitesmoke;
 }
 
-section.CallToAction {
+div.herosection section.CallToAction {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -99,14 +112,14 @@ section.CallToAction {
   text-align: center;
 }
 
-section.CallToAction a {
+div.herosection section.CallToAction a {
   text-decoration: none;
   word-spacing: 4px;
-  width: 10rem;
+  width: 100%;
   padding: 0.8rem 0rem;
   color: #ffcd04;
-  background-color: #202020;
-  border-radius: 10px;
+  background-color: #000000;
+  border-radius: 2rem;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transition: -webkit-transform ease-out 200ms;
@@ -115,7 +128,7 @@ section.CallToAction a {
   transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
 }
 
-section.CallToAction a:hover {
+div.herosection section.CallToAction a:hover {
   -webkit-box-shadow: 0px -2px 0px #ffcd04, 0px 2px 0px #ffcd04, 2px 0px 0px #ffcd04, -2px 0px 0px #ffcd04;
           box-shadow: 0px -2px 0px #ffcd04, 0px 2px 0px #ffcd04, 2px 0px 0px #ffcd04, -2px 0px 0px #ffcd04;
   -webkit-transform: scaleX(1.05);
@@ -126,39 +139,10 @@ section.CallToAction a:hover {
   transition: transform ease-in 200ms, box-shadow ease-in 200ms, -webkit-transform ease-in 200ms, -webkit-box-shadow ease-in 200ms;
 }
 
-div.separation {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  margin-top: 2rem;
-  position: relative;
-}
-
-div.separation .custom-shape-divider-top-1595766065 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-div.separation .custom-shape-divider-top-1595766065 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 79px;
-}
-
-div.separation .custom-shape-divider-top-1595766065 .shape-fill {
-  fill: white;
-}
-
 section.projects {
   grid-column: 1/-1;
   margin-top: 0rem;
   padding-bottom: 1rem;
-  background-color: #eeeeeefa;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 19.2rem 1fr;
@@ -172,8 +156,9 @@ section.projects h2 {
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #0C0F4F;
   word-spacing: 2px;
 }
 
@@ -276,30 +261,68 @@ section.tool p {
     -ms-grid-columns: 10% 40% 40% 10%;
         grid-template-columns: 10% 40% 40% 10%;
   }
-  section.heroHeader {
+  div.herosection {
+    grid-column: 1/-1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-position: center bottom;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10% 40% 40% 10%;
+        grid-template-columns: 10% 40% 40% 10%;
+  }
+  div.herosection section.heroHeader {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-column: 2 / 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
   }
-  section.heroDesc {
+  div.herosection section.heroHeader h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    word-spacing: 5px;
+  }
+  div.herosection section.heroHeader h1 span {
+    display: inline;
+  }
+  div.herosection section.heroHeader h1 span:first-child {
+    padding-right: 5px;
+  }
+  div.herosection section.heroHeader h1 span:last-child {
+    padding-left: 5px;
+  }
+  div.herosection section.heroFigure {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+  }
+  div.herosection section.heroDesc {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
   }
-  section.heroDesc p {
+  div.herosection section.heroDesc p {
     padding-top: 2rem;
     padding-left: 2rem;
   }
-  section.CallToAction {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2/4;
-    margin-top: 1.9rem;
+  div.herosection section.CallToAction {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
   }
-  div.separation {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2 / 4;
+  div.herosection section.CallToAction a {
+    width: 12rem;
   }
   section.projects {
     -ms-grid-columns: 10% 40% 40% 10%;
@@ -374,38 +397,30 @@ section.tool p {
 
 * ****************/
 @media (min-width: 992px) {
-  section.heroHeader {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2 / 4;
-    grid-column-gap: 2rem;
-    margin-bottom: 2rem;
+  div.herosection section.heroHeader h1 {
+    font-size: 2.5rem;
   }
-  section.heroHeader h1 span {
-    display: inline;
-  }
-  section.heroFigure {
-    grid-row: span 2;
+  div.herosection section.heroFigure {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  section.heroFigure figure {
+  div.herosection section.heroFigure figure {
     width: 100%;
   }
-  section.heroFigure figure img {
+  div.herosection section.heroFigure figure img {
     height: auto;
   }
-  section.heroDesc {
+  div.herosection section.heroDesc {
     justify-self: flex-start;
     margin-top: 4rem;
     margin-bottom: 0px;
   }
-  section.heroDesc p {
+  div.herosection section.heroDesc p {
     padding-left: 0;
     padding-top: 0;
     width: 20rem;
   }
-  section.CallToAction {
+  div.herosection section.CallToAction {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
@@ -413,9 +428,6 @@ section.tool p {
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin: 0px;
-  }
-  div.separation {
-    margin-top: 4.5rem;
   }
   section.projects div figure a img {
     width: 100%;
