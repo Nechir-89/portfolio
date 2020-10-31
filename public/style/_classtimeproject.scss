@@ -19,11 +19,9 @@ div.classTimeProject {
                 figcaption {
                     h3 {
                         padding: 1rem 0 0.5rem;
-                        font-family: $nativeFont;
                         word-spacing: 2px;
                     }
                     p {
-                        font-family: $nativeFont;
                         word-spacing: 2px;
                         line-height: 1.5;
                         font-size: 0.9rem;
@@ -39,7 +37,6 @@ div.classTimeProject {
                 margin-top: 1rem;
                 margin-bottom: 1.5rem;
                 text-align: center;
-                font-family: $nativeFont;
                 word-spacing: 2px;
             }
             div.card {
@@ -56,7 +53,6 @@ div.classTimeProject {
                     }
                     figcaption {
                         p {
-                            font-family: $nativeFont;
                             word-spacing: 2px;
                             font-size: 0.9rem;
                             color: rgba(0, 0, 0, 0.9);

@@ -8,7 +8,8 @@ header {
     position: relative;
     // overflow-x: hidden;
     // overflow-y: visible;
-    margin-bottom: 2.5rem;
+    background-color: #202020;
+    // margin-bottom: 2.5rem;
     div.logo {
         width: 4rem;
         height: 2rem;
@@ -21,23 +22,37 @@ header {
 
     nav {
         cursor: pointer;
+        
+        div.menuIcon{
+            
+            svg{
+                fill: white;
+                
+            }
+        }
         ul {
             list-style-type: none;
             position: absolute;
-            background-image: linear-gradient(45deg, #3023ae 0%, #f09 100%);
-            border-radius: 38% 5% 0% 28% / 25% 55% 31% 13%;
-            padding: 15rem 15rem 5rem 5rem;
+            z-index: 11111;
+            // background-image: linear-gradient(45deg, #3023ae 0%, #f09 100%);
+            background-color: #202020;
+            // border-radius: 38% 5% 0% 28% / 25% 55% 31% 13%;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
             top: 0px;
-            right: 0rem;
-            transform: translate(100%, -100%);
-            transition: transform ease-out 300ms;
+            right: 0px;
+            
+            transform: translate(0%, -100%);
+            transition: transform ease-out 200ms;
 
             li {
                 color: whitesmoke;
                 padding: 0.35rem 0;
-                font-family: $nativeFont;
                 word-spacing: 2px;
                 a {
+                    font-size: 0.9rem;
                     text-decoration: none;
                     color: whitesmoke;
                 }
@@ -45,7 +60,7 @@ header {
         }
         ul.active {
             // display: block;
-            transform: translate(50%, -50%);
+            transform: translate(0%, 0%);
             transition: transform ease-in 300ms;
         }
     }
@@ -53,20 +68,16 @@ header {
 // for tablet screens from 600px to 992px
 @media (min-width: 600px) {
     header {
-        padding-top: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
         align-items: center;
-        div.logo{
+        div.logo {
             width: 6rem;
-           
         }
         nav {
-            // new rule
-            // ***************************
             div {
                 display: none;
             }
-            // ***************************
-
             cursor: default;
             ul {
                 position: relative; // change
@@ -80,17 +91,17 @@ header {
                 // new rule
                 // ***************************
                 display: flex;
-                width: 12rem;
+                width: 20rem;
                 justify-content: space-around;
                 // ***************************
                 li {
                     // color: #333333; // change
                     padding: 0px; // change
                     a {
-                        color: #555555; // change
-                        &:hover{
-                            color: #000000;
-                            border-bottom: 1px solid black;
+                        color: #FFCD04; // change
+                        &:hover {
+                            color: #ac8b09;
+                            border-bottom: 1px solid #ac8b09;
                         }
                     }
                     // new rules
@@ -116,19 +127,18 @@ header {
     header {
         display: grid;
         grid-template-columns: 10% 40% 40% 10%;
-        div.logo{
-           grid-column: 2/3;
+        div.logo {
+            grid-column: 2/3;
         }
-        nav{
+        nav {
             grid-column: 3/4;
             justify-self: flex-end;
         }
     }
 }
 
-@media (min-width: 1366px){
-    header{
+@media (min-width: 1366px) {
+    header {
         grid-template-columns: 1fr 546.5px 546.5px 1fr;
     }
-    
 }

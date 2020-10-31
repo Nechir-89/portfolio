@@ -5,12 +5,31 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #root {
   overflow: hidden;
 }
 
+/**************
+
+    Mobile Screens
+      (Default)
+    -------------
+    -           -
+    -           -
+    - Min 310px -
+    - Max 600px -
+    -           -
+    -           -
+    -------------
+
+*****************/
 main.portfolioMain {
   display: -ms-grid;
   display: grid;
@@ -18,42 +37,55 @@ main.portfolioMain {
       grid-template-columns: 1fr 19.2rem 1fr;
 }
 
-section.heroHeader {
+div.herosection {
+  grid-column: 1/-1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  background-image: url("/images/wave.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 19.2rem 1fr;
+      grid-template-columns: 1fr 19.2rem 1fr;
+}
+
+div.herosection section.heroHeader {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
 }
 
-section.heroHeader h1 {
+div.herosection section.heroHeader h1 {
   text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.7rem;
+  font-weight: bold;
+  font-size: 1.75rem;
   line-height: 1.3;
-  color: rgba(0, 0, 0, 0.8);
+  color: whitesmoke;
 }
 
-section.heroHeader h1 span {
+div.herosection section.heroHeader h1 span {
   display: block;
 }
 
-section.heroFigure {
+div.herosection section.heroFigure {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
   margin-top: 1.9rem;
 }
 
-section.heroFigure figure {
+div.herosection section.heroFigure figure {
   width: 100%;
 }
 
-section.heroFigure figure img {
+div.herosection section.heroFigure figure img {
   max-width: 100%;
   height: auto;
 }
 
-section.heroDesc {
+div.herosection section.heroDesc {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -61,15 +93,14 @@ section.heroDesc {
   margin-bottom: 2rem;
 }
 
-section.heroDesc p {
+div.herosection section.heroDesc p {
   text-align: center;
-  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   word-spacing: 2px;
-  color: #4b4b4b;
+  color: whitesmoke;
 }
 
-section.CallToAction {
+div.herosection section.CallToAction {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -83,17 +114,17 @@ section.CallToAction {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  margin-top: 2rem;
 }
 
-section.CallToAction a {
+div.herosection section.CallToAction a {
   text-decoration: none;
   word-spacing: 4px;
-  width: 10rem;
+  width: 100%;
   padding: 0.8rem 0rem;
   color: #ffcd04;
-  background-color: #202020;
-  border-radius: 10px;
-  font-family: "Roboto", sans-serif;
+  background-color: #000000;
+  border-radius: 2rem;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transition: -webkit-transform ease-out 200ms;
@@ -102,7 +133,7 @@ section.CallToAction a {
   transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
 }
 
-section.CallToAction a:hover {
+div.herosection section.CallToAction a:hover {
   -webkit-box-shadow: 0px -2px 0px #ffcd04, 0px 2px 0px #ffcd04, 2px 0px 0px #ffcd04, -2px 0px 0px #ffcd04;
           box-shadow: 0px -2px 0px #ffcd04, 0px 2px 0px #ffcd04, 2px 0px 0px #ffcd04, -2px 0px 0px #ffcd04;
   -webkit-transform: scaleX(1.05);
@@ -113,45 +144,16 @@ section.CallToAction a:hover {
   transition: transform ease-in 200ms, box-shadow ease-in 200ms, -webkit-transform ease-in 200ms, -webkit-box-shadow ease-in 200ms;
 }
 
-div.separation {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  margin-top: 2rem;
-  position: relative;
-}
-
-div.separation .custom-shape-divider-top-1595766065 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-div.separation .custom-shape-divider-top-1595766065 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 79px;
-}
-
-div.separation .custom-shape-divider-top-1595766065 .shape-fill {
-  fill: white;
-}
-
 section.projects {
   grid-column: 1/-1;
   margin-top: 0rem;
   padding-bottom: 1rem;
-  background-color: #eeeeeefa;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 19.2rem 1fr;
       grid-template-columns: 1fr 19.2rem 1fr;
-  border-radius: 10% 10% 35% 35% / 0% 0% 10% 10%;
-  border-bottom: 1px solid silver;
+  -webkit-box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.35);
 }
 
 section.projects h2 {
@@ -159,9 +161,9 @@ section.projects h2 {
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 1.5rem;
-  font-family: "Roboto", sans-serif;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #0C0F4F;
   word-spacing: 2px;
 }
 
@@ -175,7 +177,7 @@ section.projects div figure a {
   display: block;
   width: 100%;
   margin-bottom: 0.5rem;
-  padding: 0.25rem;
+  padding: 1rem;
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
@@ -192,11 +194,10 @@ section.projects div figure figcaption {
 
 section.projects div figure figcaption h4 {
   margin-bottom: 0.5rem;
-  font-family: "Roboto", sans-serif;
+  color: #333784;
 }
 
 section.projects div figure figcaption p {
-  font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
   line-height: 1.5;
   word-spacing: 2px;
@@ -204,7 +205,6 @@ section.projects div figure figcaption p {
 }
 
 section.projects div figure figcaption span {
-  font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
 }
 
@@ -216,7 +216,7 @@ section.projects div figure figcaption span a {
           box-shadow: none;
   text-transform: uppercase;
   font-weight: bold;
-  color: black;
+  color: #BE8236;
 }
 
 section.tool {
@@ -229,9 +229,8 @@ section.tool {
 section.tool h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
-  color: rgba(0, 0, 0, 0.9);
+  color: #0C0F4F;
 }
 
 section.tool div.toolsHeading {
@@ -247,49 +246,94 @@ section.tool div.toolsHeading {
   margin-bottom: 0.7rem;
 }
 
+section.tool div.toolsHeading svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
 section.tool div.toolsHeading h3 {
-  font-family: "Roboto", sans-serif;
   margin-left: 0.5rem;
 }
 
 section.tool p {
-  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   word-spacing: 2px;
-  text-align: center;
   margin-bottom: 2rem;
   color: rgba(0, 0, 0, 0.9);
 }
 
+/* *****************
+    tablet screens 
+    600px to 992px
+
+*********************/
 @media (min-width: 600px) {
   main.portfolioMain {
     -ms-grid-columns: 10% 40% 40% 10%;
         grid-template-columns: 10% 40% 40% 10%;
   }
-  section.heroHeader {
+  div.herosection {
+    grid-column: 1/-1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-position: center bottom;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10% 40% 40% 10%;
+        grid-template-columns: 10% 40% 40% 10%;
+  }
+  div.herosection section.heroHeader {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-column: 2 / 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
   }
-  section.heroDesc {
+  div.herosection section.heroHeader h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    word-spacing: 5px;
+  }
+  div.herosection section.heroHeader h1 span {
+    display: inline;
+  }
+  div.herosection section.heroHeader h1 span:first-child {
+    padding-right: 5px;
+  }
+  div.herosection section.heroHeader h1 span:last-child {
+    padding-left: 5px;
+  }
+  div.herosection section.heroFigure {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+  }
+  div.herosection section.heroDesc {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
   }
-  section.heroDesc p {
+  div.herosection section.heroDesc p {
     padding-top: 2rem;
     padding-left: 2rem;
   }
-  section.CallToAction {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2/4;
-    margin-top: 1.9rem;
+  div.herosection section.CallToAction {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
   }
-  div.separation {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2 / 4;
+  div.herosection section.CallToAction a {
+    width: 12rem;
   }
   section.projects {
     -ms-grid-columns: 10% 40% 40% 10%;
@@ -311,16 +355,6 @@ section.tool p {
         grid-template-columns: 50% 50%;
     grid-column-gap: 2rem;
   }
-  section.projects div figure:first-child {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-  }
-  section.projects div figure:nth-child(2) {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-  }
   section.tool {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
@@ -337,9 +371,6 @@ section.tool p {
     font-size: 1.7rem;
     margin-bottom: 2.5rem;
   }
-  section.tool div.toolsHeading {
-    margin-bottom: 0px;
-  }
   section.tool div.toolsHeading:nth-child(2) {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -353,7 +384,8 @@ section.tool p {
     grid-column: 2/3;
   }
   section.tool p {
-    margin: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: rgba(0, 0, 0, 0.8);
     font-size: 0.9rem;
   }
@@ -369,39 +401,37 @@ section.tool p {
   }
 }
 
+/* *************
+
+    Desktop Screens
+    992px to 1366px
+
+* ****************/
 @media (min-width: 992px) {
-  section.heroHeader {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2 / 4;
-    grid-column-gap: 2rem;
-    margin-bottom: 2rem;
+  div.herosection section.heroHeader h1 {
+    font-size: 2.5rem;
   }
-  section.heroHeader h1 span {
-    display: inline;
-  }
-  section.heroFigure {
-    grid-row: span 2;
+  div.herosection section.heroFigure {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  section.heroFigure figure {
+  div.herosection section.heroFigure figure {
     width: 100%;
   }
-  section.heroFigure figure img {
+  div.herosection section.heroFigure figure img {
     height: auto;
   }
-  section.heroDesc {
+  div.herosection section.heroDesc {
     justify-self: flex-start;
     margin-top: 4rem;
     margin-bottom: 0px;
   }
-  section.heroDesc p {
+  div.herosection section.heroDesc p {
     padding-left: 0;
     padding-top: 0;
     width: 20rem;
   }
-  section.CallToAction {
+  div.herosection section.CallToAction {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
@@ -409,9 +439,6 @@ section.tool p {
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin: 0px;
-  }
-  div.separation {
-    margin-top: 4.5rem;
   }
   section.projects div figure a img {
     width: 100%;
@@ -433,19 +460,20 @@ section.tool p {
   }
   section.tool p {
     font-size: 1rem;
-    width: 20rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     line-height: 1.7;
-  }
-  section.tool p:nth-child(3) {
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
-  section.tool p:nth-child(5) {
     -ms-grid-column-align: center;
         justify-self: center;
   }
 }
 
+/******************
+
+    Large Screens
+    Larger than 1366px
+
+*****************/
 @media (min-width: 1366px) {
   main.portfolioMain {
     -ms-grid-columns: 1fr 546.5px 546.5px 1fr;
@@ -459,19 +487,18 @@ section.tool p {
 
 section.contact {
   grid-column: 1 / -1;
-  background-color: #3333335a;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  border-top: 1px solid #555555;
+  -webkit-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.35);
   border-bottom: 1px solid whitesmoke;
 }
 
 section.contact h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
-  color: rgba(0, 0, 0, 0.9);
+  color: #0C0F4F;
 }
 
 section.contact .email {
@@ -485,13 +512,19 @@ section.contact .email {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1.3rem;
-  font-family: "Roboto", sans-serif;
 }
 
-section.contact .email img {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 0.5rem;
+section.contact .email svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.7rem;
+  fill: #222222;
+}
+
+section.contact .email span {
+  color: #000000;
+  font-size: 1rem;
+  letter-spacing: 2px;
 }
 
 section.contact .contactLinks {
@@ -525,11 +558,10 @@ section.contact .contactLinks .container .contactLink a {
   height: 1.5rem;
 }
 
-section.contact .contactLinks .container .contactLink a img {
+section.contact .contactLinks .container .contactLink a svg {
   width: 1.5rem;
   height: 1.5rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  fill: #000000;
 }
 
 @media (min-width: 600px) {
@@ -571,7 +603,7 @@ section.contact .contactLinks .container .contactLink a img {
 
 footer {
   grid-column: 1 / -1;
-  background-color: #333333ee;
+  background-color: #154563;
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
 }
@@ -579,34 +611,49 @@ footer {
 footer div.container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 9.6rem 9.6rem 1fr;
-      grid-template-columns: 1fr 9.6rem 9.6rem 1fr;
-  -ms-grid-rows: auto auto auto 2rem;
-      grid-template-rows: auto auto auto 2rem;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
   grid-row-gap: 0.5rem;
 }
 
-footer div.container a {
-  color: whitesmoke;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
+footer div.container div.links {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-row-gap: 0.6rem;
+}
+
+footer div.container div.links a {
+  color: silver;
+  font-size: 0.8rem;
   word-spacing: 2px;
-  font-size: smaller;
-  justify-self: flex-start;
+  text-align: left;
+  text-decoration: none;
+}
+
+footer div.container div.links a:hover {
+  text-decoration: underline;
 }
 
 footer div.container div.publishDate {
   color: yellow;
-  -ms-grid-row: 4;
-  grid-row: 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  font-family: "Roboto", sans-serif;
   font-size: smaller;
   word-spacing: 2px;
 }
@@ -629,7 +676,6 @@ footer div.container div.publishDate {
     justify-self: flex-end;
     -ms-flex-item-align: end;
         align-self: flex-end;
-    font-family: "Roboto", sans-serif;
     font-size: smaller;
     word-spacing: 2px;
     padding-bottom: 1rem;
@@ -716,13 +762,11 @@ div.about main div.cover figure img:hover {
 
 div.about main div.cover figure figcaption h3 {
   color: #222222;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
 }
 
 div.about main div.cover figure figcaption p {
   color: #444444;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
 }
 
@@ -732,7 +776,6 @@ div.about main p.about-desc {
   grid-column: 2/3;
   line-height: 1.6;
   word-spacing: 4px;
-  font-family: "Roboto", sans-serif;
   letter-spacing: 0.5px;
 }
 
@@ -758,7 +801,7 @@ header {
   padding-top: 1rem;
   padding-right: 1rem;
   position: relative;
-  margin-bottom: 2.5rem;
+  background-color: #202020;
 }
 
 header div.logo {
@@ -775,37 +818,44 @@ header nav {
   cursor: pointer;
 }
 
+header nav div.menuIcon svg {
+  fill: white;
+}
+
 header nav ul {
   list-style-type: none;
   position: absolute;
-  background-image: linear-gradient(45deg, #3023ae 0%, #f09 100%);
-  border-radius: 38% 5% 0% 28% / 25% 55% 31% 13%;
-  padding: 15rem 15rem 5rem 5rem;
+  z-index: 11111;
+  background-color: #202020;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   top: 0px;
-  right: 0rem;
-  -webkit-transform: translate(100%, -100%);
-          transform: translate(100%, -100%);
-  -webkit-transition: -webkit-transform ease-out 300ms;
-  transition: -webkit-transform ease-out 300ms;
-  transition: transform ease-out 300ms;
-  transition: transform ease-out 300ms, -webkit-transform ease-out 300ms;
+  right: 0px;
+  -webkit-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
+  -webkit-transition: -webkit-transform ease-out 200ms;
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
 }
 
 header nav ul li {
   color: whitesmoke;
   padding: 0.35rem 0;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
 }
 
 header nav ul li a {
+  font-size: 0.9rem;
   text-decoration: none;
   color: whitesmoke;
 }
 
 header nav ul.active {
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
   -webkit-transition: -webkit-transform ease-in 300ms;
   transition: -webkit-transform ease-in 300ms;
   transition: transform ease-in 300ms;
@@ -814,7 +864,8 @@ header nav ul.active {
 
 @media (min-width: 600px) {
   header {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -842,7 +893,7 @@ header nav ul.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 12rem;
+    width: 20rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -851,11 +902,11 @@ header nav ul.active {
     cursor: pointer;
   }
   header nav ul li a {
-    color: #555555;
+    color: #FFCD04;
   }
   header nav ul li a:hover {
-    color: #000000;
-    border-bottom: 1px solid black;
+    color: #ac8b09;
+    border-bottom: 1px solid #ac8b09;
   }
   header nav ul li:first-child {
     display: none;
@@ -925,12 +976,10 @@ div.classTimeProject main section.projectHeader figure img {
 
 div.classTimeProject main section.projectHeader figure figcaption h3 {
   padding: 1rem 0 0.5rem;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
 }
 
 div.classTimeProject main section.projectHeader figure figcaption p {
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
   line-height: 1.5;
   font-size: 0.9rem;
@@ -947,7 +996,6 @@ div.classTimeProject main section.projectBody h3 {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
 }
 
@@ -972,7 +1020,6 @@ div.classTimeProject main section.projectBody div.card figure img {
 }
 
 div.classTimeProject main section.projectBody div.card figure figcaption p {
-  font-family: "Roboto", sans-serif;
   word-spacing: 2px;
   font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.9);

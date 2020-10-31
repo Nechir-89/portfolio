@@ -1,36 +1,46 @@
 footer {
     grid-column: 1 / -1;
-    background-color: #333333ee;
+    background-color: #154563;
     padding-top: 1.5rem;
     padding-bottom: 0.5rem;
     div.container {
         display: grid;
-        grid-template-columns: 1fr 9.6rem 9.6rem 1fr;
-        grid-template-rows: auto auto auto 2rem;
+        grid-template-columns: 10% 80% 10%;
+        
         grid-row-gap: 0.5rem;
-        a {
-            color: whitesmoke;
-            text-decoration: none;
-            font-family: $nativeFont;
-            word-spacing: 2px;
-            font-size: smaller;
-            justify-self: flex-start;
+        div.links {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 0.6rem;
+            a {
+                color: silver;
+                font-size: 0.8rem;
+                word-spacing: 2px;
+                text-align: left;
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
         div.publishDate {
             color: yellow;
-            grid-row: 4;
-            grid-column: 2 / 4;
+            grid-row: 2/3;
+            grid-column: 2/3;
             justify-self: center;
             align-self: flex-end;
-            font-family: $nativeFont;
             font-size: smaller;
             word-spacing: 2px;
+
         }
     }
 }
 
 // for tablet screens from 600px to 992px
-@media (min-width: 600px){
+@media (min-width: 600px) {
     footer {
         div.container {
             // display: grid;
@@ -41,14 +51,12 @@ footer {
                 text-align: center;
             }
 
-
             div.publishDate {
                 color: yellow;
                 grid-row: 4;
                 grid-column: 2 / 4;
                 justify-self: flex-end;
                 align-self: flex-end;
-                font-family: $nativeFont;
                 font-size: smaller;
                 word-spacing: 2px;
                 padding-bottom: 1rem;
@@ -56,7 +64,7 @@ footer {
         }
     }
 }
-@media (min-width: 1366px){
+@media (min-width: 1366px) {
     footer {
         div.container {
             grid-template-columns: 1fr 546.5px 546.5px 1fr;

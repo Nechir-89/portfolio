@@ -1,4 +1,5 @@
 div.about {
+    
     main {
         display: grid;
         grid-template-columns: 10% 80% 10%;
@@ -55,12 +56,10 @@ div.about {
                 figcaption {
                     h3 {
                         color: #222222;
-                        font-family: $nativeFont;
                         word-spacing: 2px;
                     }
                     p {
                         color: #444444;
-                        font-family: $nativeFont;
                         word-spacing: 2px;
                     }
                 }
@@ -70,7 +69,6 @@ div.about {
             grid-column: 2/3;
             line-height: 1.6;
             word-spacing: 4px;
-            font-family: $nativeFont;
             letter-spacing: 0.5px;
         }
     }

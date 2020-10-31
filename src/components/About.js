@@ -1,11 +1,10 @@
 import React from "react"
 import Main from "./about/Main"
-import Footer from "./Footer/Footer"
-import Contact from "./contact/Contact"
+import Footer from "./Footer"
+import Contact from "./Contact"
 
 export default function About(){
     return (
-        // <h1>About Page</h1>
         <div className="about">
             <Main />
             <Contact />

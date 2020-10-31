@@ -2,20 +2,13 @@ import React from 'react';
 import Portfolio from './components/Portfolio';
 import About from './components/About';
 
-// routing
-import {
-  BrowserRouter,
-  Link,
-  Route,
-  Switch
-} from 'react-router-dom'
+// router
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
 
-// images
-import MenuImg from './menu.svg'
-import crossImage from './cross.svg'
-import logo from './logo.jpg'
+// icons
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
-// import ClassTimeScheduleProject
+// class time project
 import ClassTimeProject from "./components/ClassTimeScheduleProject"
 
 export default class App extends React.Component {
@@ -40,22 +33,25 @@ export default class App extends React.Component {
           {/* logo */}
           <div className="logo">
             <a href="/">
-              <img src={logo} alt="dev Nechir" />
+              <img src='/images/logo.svg' alt="dev Nechir" />
             </a>
           </div>
           {/* menu */}
           <nav onClick={this.handleClic}>
             {/* ------------------------------ */}
-            <div>
-              <img src={MenuImg} alt="menu" />
+            <div className='menuIcon'>
+              <AiOutlineMenu />
             </div>
             {/* ------------------------------ */}
             <ul className={this.state.isActive ? "active" : ""}>
               <li style={{ marginBottom: "1rem", textAlign: "right", color: "white" }}>
-                <img src={crossImage} alt="menu" />
+                <AiOutlineClose />
               </li>
               <li><Link to="/">Portfolio</Link></li>
               <li><Link to="/About">About</Link></li>
+              <li><a href="/#projects">Projects</a></li>
+              <li> <a href="/#contact">Make Contact</a> </li>
+              <li style={{display:'none'}}><Link to="/ClassTimeProject">schedule project</Link></li>
             </ul>
           </nav>
         </header>
