@@ -49,7 +49,8 @@ export default class App extends React.Component {
               </li>
               <li><Link to="/">Portfolio</Link></li>
               <li><Link to="/About">About</Link></li>
-              <li><a href="/#contact">Make Contact</a></li>
+              <li><a href="/#projects">Projects</a></li>
+              <li> <a href="/#contact">Make Contact</a> </li>
               <li style={{display:'none'}}><Link to="/ClassTimeProject">schedule project</Link></li>
             </ul>
           </nav>

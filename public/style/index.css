@@ -114,6 +114,7 @@ div.herosection section.CallToAction {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  margin-top: 2rem;
 }
 
 div.herosection section.CallToAction a {
@@ -824,17 +825,20 @@ header nav div.menuIcon svg {
 header nav ul {
   list-style-type: none;
   position: absolute;
-  background-image: linear-gradient(45deg, #3023ae 0%, #f09 100%);
-  border-radius: 38% 5% 0% 28% / 25% 55% 31% 13%;
-  padding: 15rem 15rem 5rem 5rem;
+  z-index: 11111;
+  background-color: #202020;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   top: 0px;
-  right: 0rem;
-  -webkit-transform: translate(100%, -100%);
-          transform: translate(100%, -100%);
-  -webkit-transition: -webkit-transform ease-out 300ms;
-  transition: -webkit-transform ease-out 300ms;
-  transition: transform ease-out 300ms;
-  transition: transform ease-out 300ms, -webkit-transform ease-out 300ms;
+  right: 0px;
+  -webkit-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
+  -webkit-transition: -webkit-transform ease-out 200ms;
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
 }
 
 header nav ul li {
@@ -844,13 +848,14 @@ header nav ul li {
 }
 
 header nav ul li a {
+  font-size: 0.9rem;
   text-decoration: none;
   color: whitesmoke;
 }
 
 header nav ul.active {
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
   -webkit-transition: -webkit-transform ease-in 300ms;
   transition: -webkit-transform ease-in 300ms;
   transition: transform ease-in 300ms;
